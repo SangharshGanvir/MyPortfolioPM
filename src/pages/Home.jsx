@@ -17,19 +17,17 @@ const Home = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
-              Sangharsh<br />
-              <span className="text-gray-500">G Ganvir.</span>
+              Senior Product Designer<br />
+              <span className="text-gray-500">& UX Lead</span>
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
-              Senior UX Project Manager bridging the gap between{' '}
-              <span className="font-semibold text-white">design vision</span> and{' '}
-              <span className="font-semibold text-white">technical execution</span>.
+              Bridging design vision and technical execution to build scalable enterprise products.
             </p>
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
               <Link to="/work" className="btn-primary inline-flex items-center justify-center gap-2">
-                View Selected Works
+                View Selected Work
                 <ArrowRight size={20} />
               </Link>
               <a 
@@ -53,7 +51,7 @@ const Home = () => {
               </div>
               
               <div>
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">F500</div>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">Enterprise</div>
                 <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Client Portfolio</div>
               </div>
             </div>
@@ -61,11 +59,11 @@ const Home = () => {
           
           {/* Right Column - Image */}
           <div className="relative max-w-sm sm:max-w-md mx-auto lg:mx-0 mt-8 lg:mt-0">
-            <div className="aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-transparent border border-dark-border">
+            <div className="aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-transparent border border-dark-border group cursor-pointer">
               <img 
                 src="/hero-image.jpeg" 
                 alt="Sangharsh G Ganvir"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
             </div>
             
@@ -91,42 +89,38 @@ const Home = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Strategic Leadership</h2>
           <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12">Orchestrating complexity into clarity.</p>
           
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div>
-              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
                 <Briefcase className="text-primary" />
                 Methodology
               </h3>
               <p className="text-gray-400 leading-relaxed">
                 My approach combines Agile best practices with deep user-centered design principles. 
-                I specialize in leading cross-functional teams to deliver complex digital products, 
-                ensuring business goals are met without compromising the user experience.
+                I lead cross-functional teams to deliver scalable digital products that align business 
+                goals with real user needs—without compromising usability or quality.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 flex items-center gap-3">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
                 <Users className="text-primary" />
                 Collaboration
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Effective project management is 90% communication. I build transparent workflows 
-                that bridge the language barrier between creative designers and engineering teams, 
-                fostering an environment of trust and rapid iteration.
+                Effective design leadership is rooted in communication. I build transparent workflows 
+                that bridge designers, engineers, and stakeholders, fostering trust, alignment, and rapid iteration.
               </p>
             </div>
           </div>
           
-          <div className="mt-12">
-            <h3 className="text-2xl font-bold mb-6 flex items-center gap-3">
-              <Award className="text-primary" />
-              Core Competencies
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {['Agile/Scrum', 'Stakeholder Management', 'UX Strategy', 'Team Leadership', 
-                'Product Roadmapping', 'Design Systems', 'User Research', 'Data Analytics'].map((skill) => (
+          <div className="mt-8 md:mt-12">
+            <h3 className="text-lg md:text-xl font-bold mb-6">Core Competencies</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+              {['UX Strategy', 'Stakeholder Management', 'Product Roadmapping', 'Design Systems', 
+                'User Research', 'Team Leadership', 'Data-Informed Design'].map((skill) => (
                 <div key={skill} className="card text-center">
-                  <span className="text-sm font-medium">{skill}</span>
+                  <span className="text-xs md:text-sm font-medium">{skill}</span>
                 </div>
               ))}
             </div>

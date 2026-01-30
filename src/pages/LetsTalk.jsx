@@ -4,9 +4,13 @@ const LetsTalk = () => {
   return (
     <div className="container-custom py-12 md:py-20">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-16 text-center leading-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8 text-center leading-tight">
           Let's build something impactful together.
         </h1>
+        
+        <p className="text-lg md:text-xl text-gray-400 text-center mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed">
+          Whether you're exploring a collaboration, discussing a product challenge, or just want to connect — I'd love to hear from you.
+        </p>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-16">
           {/* Left Column - Contact Info */}
@@ -74,15 +78,15 @@ const LetsTalk = () => {
                 <div>
                   <h4 className="font-semibold text-white mb-2">What types of projects do you take on?</h4>
                   <p className="text-gray-400 text-sm">
-                    I specialize in complex product management, agile transformations, and UX strategy 
-                    for enterprise/SaaS. I typically do not take on small website builds.
+                    I specialize in enterprise product design, UX strategy, and complex digital systems. 
+                    I focus on scalable products rather than small brochure websites.
                   </p>
                 </div>
 
                 <div>
-                  <h4 className="font-semibold text-white mb-2">Current Availability</h4>
+                  <h4 className="font-semibold text-white mb-2">Availability</h4>
                   <p className="text-gray-400 text-sm">
-                    I have capacity for one major consulting engagement starting Q3 2024. Advisory roles are open.
+                    Currently open to new opportunities and select consulting engagements.
                   </p>
                 </div>
               </div>

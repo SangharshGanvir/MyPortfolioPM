@@ -10,20 +10,20 @@ const Work = () => {
     : allWorks.filter(project => project.category === activeCategory);
 
   return (
-    <div className="container-custom py-20">
-      <div className="mb-16">
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">
-          Senior UX Project Manager
+    <div className="container-custom py-12 md:py-20">
+      <div className="mb-12 md:mb-16">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">
+          Selected Work
         </h1>
-        <p className="text-2xl text-gray-400 max-w-3xl">
-          Bridging the gap between design vision and technical execution. 9+ years delivering 
-          complex digital products for enterprise and startups.
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 max-w-4xl leading-relaxed">
+          A curated selection of enterprise and product design projects focused on usability, 
+          scalability, and measurable business impact.
         </p>
       </div>
 
       {/* Category Filter */}
-      <div className="mb-12">
-        <h2 className="text-3xl font-bold mb-6">Selected Works</h2>
+      <div className="mb-8 md:mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">Filter by Category</h2>
         <div className="flex flex-wrap gap-4">
           {workCategories.map((category) => (
             <button

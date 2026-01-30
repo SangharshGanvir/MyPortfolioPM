@@ -3,11 +3,11 @@ import { Download, Linkedin, Twitter, Mail, MessageSquare } from 'lucide-react';
 const Contact = () => {
   const skills = {
     software: [
-      'Figma', 'Sketch', 'Adobe XD', 'Jira', 'Confluence', 
-      'Miro', 'Notion', 'Mixpanel', 'Google Analytics'
+      'Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 
+      'Jira', 'Confluence', 'Miro', 'Notion', 'Google Analytics'
     ],
     methodologies: [
-      'Agile/Scrum', 'Design Thinking', 'Lean UX', 
+      'Agile / Scrum', 'Design Thinking', 'Lean UX', 
       'OKRs', 'User Story Mapping', 'A/B Testing'
     ]
   };
@@ -15,26 +15,22 @@ const Contact = () => {
   const processSteps = [
     {
       title: 'Discovery',
-      subtitle: 'User Research & Stakeholder Interviews',
-      description: 'Uncovering the \'why\' before defining the \'what\'. I facilitate workshops and synthesize qualitative data to align business goals with user needs.',
+      description: 'I begin by understanding business goals and real user problems through research, stakeholder interviews, and workflow analysis—defining the "why" before the "what."',
       icon: '🔍'
     },
     {
       title: 'Strategy',
-      subtitle: 'Roadmapping & Sprint Planning',
-      description: 'Translating insights into actionable milestones. I define MVPs, prioritize backlogs based on ROI, and set clear success metrics.',
+      description: 'Insights are translated into product roadmaps, MVPs, and measurable success metrics that balance user needs with business priorities.',
       icon: '💡'
     },
     {
       title: 'Execution',
-      subtitle: 'Agile Management & Backlog Grooming',
-      description: 'Keeping the team unblocked and focused. I lead daily stand-ups, manage scope creep, and ensure design-dev handoff is seamless.',
+      description: 'I guide teams through iterative design and delivery, ensuring seamless collaboration between design and development while managing scope and quality.',
       icon: '⚡'
     },
     {
       title: 'Delivery',
-      subtitle: 'QA & Product Launch',
-      description: 'Ensuring quality at scale. I oversee UAT, coordinate release schedules, and gather post-launch feedback for the next iteration.',
+      description: 'I oversee QA, coordinate launches, and gather post-launch feedback to inform future improvements and scalability.',
       icon: '🚀'
     }
   ];
@@ -46,15 +42,14 @@ const Contact = () => {
         <div className="container-custom">
           <h1 className="section-title">How I Lead Projects</h1>
           <p className="section-subtitle">
-            My operational framework ensures clarity, agility, and user-centric outcomes from day one.
+            Ensuring clarity, agility, and user-centric outcomes from day one.
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="card">
                 <div className="text-4xl mb-4">{step.icon}</div>
-                <h3 className="text-2xl font-bold mb-2">{step.title}</h3>
-                <h4 className="text-primary font-medium mb-4">{step.subtitle}</h4>
+                <h3 className="text-2xl font-bold mb-4">{step.title}</h3>
                 <p className="text-gray-400 leading-relaxed">{step.description}</p>
               </div>
             ))}
@@ -101,18 +96,14 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="bg-dark-card border-t border-dark-border py-20">
+      <section className="bg-dark-card border-t border-dark-border py-12 md:py-20">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 md:mb-16">
               Ready to optimize your product lifecycle?
             </h2>
-            <p className="text-xl text-gray-400 mb-12">
-              Whether you have a question about my process, want to discuss a potential collaboration, 
-              or just want to say hi, I'd love to hear from you.
-            </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 md:mb-16">
               <a 
                 href="/resume.pdf" 
                 download
@@ -138,11 +129,11 @@ const Contact = () => {
                 <MessageSquare className="text-primary flex-shrink-0 mt-1" size={24} />
                 <div>
                   <p className="text-gray-300 italic mb-2">
-                    "Alex transformed our chaotic roadmap into a clear strategic vision. 
-                    A true leader in the UX space."
+                    "Sangharsh transformed complex workflows into intuitive experiences. 
+                    A true leader in UX."
                   </p>
                   <p className="text-sm text-gray-500">
-                    — Sarah Jenkins, VP of Product
+                    — Product Director
                   </p>
                 </div>
               </div>

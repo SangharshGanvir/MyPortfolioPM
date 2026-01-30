@@ -3,74 +3,74 @@ import { ArrowRight, Target, Users, Lightbulb } from 'lucide-react';
 
 const About = () => {
   return (
-    <div className="container-custom py-20">
+    <div className="container-custom py-12 md:py-20">
       <div className="max-w-4xl mx-auto">
-        <h1 className="section-title">About Me</h1>
-        <p className="section-subtitle">
-          Passionate about creating seamless user experiences through strategic leadership.
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">About Me</h1>
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12 leading-relaxed">
+          Passionate about creating seamless user experiences through strategic design leadership.
         </p>
 
-        <div className="space-y-12">
+        <div className="space-y-8 md:space-y-12">
           <div className="card">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
+            <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
               <Target className="text-primary" />
               My Mission
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
-              As a Senior UX Project Manager with over 9 years of experience, I specialize in 
-              bridging the gap between design vision and technical execution. My approach combines 
-              Agile best practices with deep user-centered design principles to deliver complex 
-              digital products that meet business goals without compromising user experience.
+              I'm a Senior Product Designer and UX Lead with over 9 years of experience bridging 
+              the gap between design vision and technical execution.
+            </p>
+            <p className="text-gray-400 leading-relaxed mb-4">
+              My approach blends Agile delivery with strong user-centered design principles to 
+              create enterprise products that meet business objectives without compromising usability.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              I've had the privilege of working with Fortune 500 companies and innovative startups, 
-              leading cross-functional teams to deliver over 50 successful projects across FinTech, 
-              HealthTech, and enterprise software domains.
+              I've led cross-functional teams across complex domains including ERP platforms, 
+              analytics systems, and mobile applications—delivering scalable, future-ready solutions.
             </p>
           </div>
 
           <div className="card">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
+            <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
               <Users className="text-primary" />
               Leadership Philosophy
             </h2>
             <p className="text-gray-400 leading-relaxed mb-4">
-              I believe effective project management is 90% communication. My leadership style 
-              focuses on building transparent workflows that bridge the language barrier between 
-              creative designers and engineering teams, fostering an environment of trust and 
-              rapid iteration.
+              I believe effective leadership is built on clarity and trust. My role is to create 
+              alignment between designers, engineers, and stakeholders through transparent processes 
+              and shared goals.
             </p>
             <p className="text-gray-400 leading-relaxed">
-              I'm passionate about mentoring junior team members and creating inclusive environments 
-              where every voice is heard and valued.
+              I'm passionate about mentoring designers and fostering collaborative environments 
+              where every voice contributes to better outcomes.
             </p>
           </div>
 
           <div className="card">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-3">
+            <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
               <Lightbulb className="text-primary" />
               What I Bring
             </h2>
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
-                <span>Deep expertise in Agile/Scrum methodologies and design thinking</span>
+                <span>Deep experience in enterprise product design</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
-                <span>Proven track record of delivering complex projects on time and within budget</span>
+                <span>Proven ability to lead complex projects end-to-end</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
-                <span>Strong stakeholder management and executive communication skills</span>
+                <span>Strong stakeholder and client communication</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
-                <span>Experience building and scaling design systems across multiple product lines</span>
+                <span>Expertise in building and scaling design systems</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-1">•</span>
-                <span>Data-driven approach to decision making with tools like Mixpanel and Google Analytics</span>
+                <span>Data-informed decision making</span>
               </li>
             </ul>
           </div>
