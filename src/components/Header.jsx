@@ -25,11 +25,14 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-            <Link to="/work" className={`${isActive('/work')} transition-colors font-medium`}>
-              Work
+            <Link to="/" className={`${isActive('/')} transition-colors font-medium`}>
+              Home
             </Link>
             <Link to="/about" className={`${isActive('/about')} transition-colors font-medium`}>
               About
+            </Link>
+            <Link to="/work" className={`${isActive('/work')} transition-colors font-medium`}>
+              Work
             </Link>
             <Link to="/contact" className={`${isActive('/contact')} transition-colors font-medium`}>
               Contact
@@ -65,11 +68,11 @@ const Header = () => {
           <div className="lg:hidden mt-4 py-4 border-t border-dark-border">
             <div className="flex flex-col gap-4">
               <Link 
-                to="/work" 
-                className={`${isActive('/work')} transition-colors font-medium py-2`}
+                to="/" 
+                className={`${isActive('/')} transition-colors font-medium py-2`}
                 onClick={closeMobileMenu}
               >
-                Work
+                Home
               </Link>
               <Link 
                 to="/about" 
@@ -77,6 +80,13 @@ const Header = () => {
                 onClick={closeMobileMenu}
               >
                 About
+              </Link>
+              <Link 
+                to="/work" 
+                className={`${isActive('/work')} transition-colors font-medium py-2`}
+                onClick={closeMobileMenu}
+              >
+                Work
               </Link>
               <Link 
                 to="/contact" 

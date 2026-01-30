@@ -17,7 +17,7 @@ const Home = () => {
             </div>
             
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 leading-tight">
-              Senior Product Designer<br />
+              Sr. Product Designer<br />
               <span className="text-gray-500">& UX Lead</span>
             </h1>
             
