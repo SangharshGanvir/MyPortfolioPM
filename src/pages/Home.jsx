@@ -62,7 +62,8 @@ const Home = () => {
             <div className="aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-transparent border border-dark-border group cursor-pointer">
               <img 
                 src="/hero-image.jpeg" 
-                alt="Sangharsh G Ganvir"
+                alt="Sangharsh G Ganvir - Sr. Product Designer & UX Lead"
+                loading="eager"
                 className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
               />
             </div>

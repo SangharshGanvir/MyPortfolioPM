@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ExternalLink, Zap, Menu, X } from 'lucide-react';
+import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const location = useLocation();
@@ -45,6 +46,7 @@ const Header = () => {
               Resume
               <ExternalLink size={16} />
             </a>
+            <ThemeToggle />
             <Link 
               to="/lets-talk" 
               className="btn-primary"
@@ -104,6 +106,9 @@ const Header = () => {
                 Resume
                 <ExternalLink size={16} />
               </a>
+              <div className="py-2">
+                <ThemeToggle />
+              </div>
               <Link 
                 to="/lets-talk" 
                 className="btn-primary text-center mt-2"

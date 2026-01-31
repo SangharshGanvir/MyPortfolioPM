@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import LetsTalk from './pages/LetsTalk';
 import ProjectDetail from './pages/projects/ProjectDetail';
+import NotFound from './pages/NotFound';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="lets-talk" element={<LetsTalk />} />
           <Route path="projects/:projectId" element={<ProjectDetail />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>
