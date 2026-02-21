@@ -98,26 +98,26 @@ export const featuredProjects = [
   {
     id: 1,
     category: 'FinTech',
-    title: 'Enterprise Analytics Dashboard',
-    description: 'Led a team of 12 to redesign the core banking analytics suite, increasing user retention by 40%.',
+    title: 'AI-Powered Job Matching Platform',
+    description: 'An AI-enabled career platform designed to help job seekers discover relevant roles through skill-based matching.',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
-    link: '/projects/healthcare-booking-app'
+    link: '/projects/ai-job-matching-platform'
   },
   {
     id: 2,
     category: 'HealthTech',
-    title: 'Patient Portal Mobile App',
-    description: 'Orchestrated the mobile transformation for a major healthcare provider, ensuring HIPAA compliance and accessibility.',
+    title: 'Smart Healthcare Access Platform',
+    description: 'A dual-sided digital ecosystem connecting patients via Mobile App and clinical staff via Web App to streamline access and scheduling.',
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
-    link: '/projects/healthcare-booking-app'
+    link: '/projects/smart-healthcare-access-platform'
   },
   {
     id: 3,
     category: 'Internal Tools',
-    title: 'Design System Implementation',
-    description: 'Managed the rollout of a unified design system across 5 product lines, reducing development time by 30%.',
+    title: 'AI-Enabled Government Service Platform',
+    description: 'An AI-enabled government service platform designed to help citizens complete benefit and license applications.',
     image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80',
-    link: '/projects/healthcare-booking-app'
+    link: '/projects/ai-government-service-platform'
   }
 ];
 
@@ -125,29 +125,29 @@ export const allWorks = [
   {
     id: 1,
     category: 'HealthTech',
-    title: 'Patient Portal Redesign',
-    description: 'Complete overhaul of a legacy patient check-in system focusing on accessibility and HIPAA compliance.',
-    metric: 'Reduced check-in time by 45%',
+    title: 'Smart Healthcare Access Platform',
+    description: 'A dual-sided digital ecosystem connecting patients via Mobile App and clinical staff via Web App to streamline access and scheduling.',
+    metric: 'Reduced call volumes by 40%',
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
-    link: '/projects/healthcare-booking-app'
+    link: '/projects/smart-healthcare-access-platform'
   },
   {
     id: 2,
     category: 'FinTech',
-    title: 'Investment Dashboard',
-    description: 'Designed a high-frequency trading interface for institutional investors with real-time data streaming.',
-    metric: 'Facilitated $2M in transactions in Q1',
+    title: 'AI-Powered Job Matching Platform',
+    description: 'An AI-enabled career platform designed to help job seekers discover relevant roles through skill-based matching.',
+    metric: '45% increase in application completion',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
-    link: '/projects/healthcare-booking-app'
+    link: '/projects/ai-job-matching-platform'
   },
   {
     id: 3,
     category: 'Strategy',
-    title: 'Enterprise Migration',
-    description: 'Led the UX strategy for migrating 50k+ users from on-premise software to a cloud-based SaaS solution.',
-    metric: 'Managed 20+ cross-functional team members',
+    title: 'AI-Enabled Government Service Platform',
+    description: 'An AI-enabled government service platform designed to help citizens complete benefit and license applications.',
+    metric: '50% increase in form completion',
     image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-    link: '/projects/healthcare-booking-app'
+    link: '/projects/ai-government-service-platform'
   },
   {
     id: 4,
@@ -156,6 +156,6 @@ export const allWorks = [
     description: 'Optimized the checkout flow for a global retailer, introducing local payment methods and simplified forms.',
     metric: 'Increased conversion rate by 18%',
     image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
-    link: '/projects/healthcare-booking-app'
+    link: '/projects/smart-healthcare-access-platform'
   }
 ];

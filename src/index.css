@@ -190,3 +190,9 @@
     @apply text-xl md:text-2xl text-gray-400 mb-12;
   }
 }
+
+@layer utilities {
+  .max-w-6xl {
+    max-width: 100rem;
+  }
+}
