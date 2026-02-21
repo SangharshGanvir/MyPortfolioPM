@@ -97,6 +97,14 @@ export const workCategories = ['All', 'FinTech', 'HealthTech', 'Strategy', 'Agil
 export const featuredProjects = [
   {
     id: 1,
+    category: 'HealthTech',
+    title: 'NeuroCare AI',
+    description: 'A dual-sided digital healthcare platform designed to streamline patient access, optimize provider workflows, and introduce predictive health intelligence through AI-driven insights.',
+    image: '/nurocare-ai/web/NeuroCare AI Landing Page-2.png',
+    link: '/projects/neurocare-ai'
+  },
+  {
+    id: 2,
     category: 'FinTech',
     title: 'AI-Powered Job Matching Platform',
     description: 'An AI-enabled career platform designed to help job seekers discover relevant roles through skill-based matching.',
@@ -104,26 +112,27 @@ export const featuredProjects = [
     link: '/projects/ai-job-matching-platform'
   },
   {
-    id: 2,
+    id: 3,
     category: 'HealthTech',
     title: 'Smart Healthcare Access Platform',
     description: 'A dual-sided digital ecosystem connecting patients via Mobile App and clinical staff via Web App to streamline access and scheduling.',
     image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
     link: '/projects/smart-healthcare-access-platform'
-  },
-  {
-    id: 3,
-    category: 'Internal Tools',
-    title: 'AI-Enabled Government Service Platform',
-    description: 'An AI-enabled government service platform designed to help citizens complete benefit and license applications.',
-    image: 'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80',
-    link: '/projects/ai-government-service-platform'
   }
 ];
 
 export const allWorks = [
   {
     id: 1,
+    category: 'HealthTech',
+    title: 'NeuroCare AI',
+    description: 'A dual-sided digital healthcare platform designed to streamline patient access, optimize provider workflows, and introduce predictive health intelligence.',
+    metric: '38% faster booking completion',
+    image: '/nurocare-ai/web/NeuroCare AI Landing Page-2.png',
+    link: '/projects/neurocare-ai'
+  },
+  {
+    id: 2,
     category: 'HealthTech',
     title: 'Smart Healthcare Access Platform',
     description: 'A dual-sided digital ecosystem connecting patients via Mobile App and clinical staff via Web App to streamline access and scheduling.',

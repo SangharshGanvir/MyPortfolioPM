@@ -9,6 +9,7 @@ import LetsTalk from './pages/LetsTalk';
 import SmartHealthcareAccessPlatform from './pages/projects/SmartHealthcareAccessPlatform';
 import AIJobMatchingPlatform from './pages/projects/AIJobMatchingPlatform';
 import AIGovernmentServicePlatform from './pages/projects/AIGovernmentServicePlatform';
+import NeuroCareAI from './pages/projects/NeuroCareAI';
 import NotFound from './pages/NotFound';
 
 function ScrollToTop() {
@@ -35,6 +36,7 @@ function App() {
           <Route path="projects/smart-healthcare-access-platform" element={<SmartHealthcareAccessPlatform />} />
           <Route path="projects/ai-job-matching-platform" element={<AIJobMatchingPlatform />} />
           <Route path="projects/ai-government-service-platform" element={<AIGovernmentServicePlatform />} />
+          <Route path="projects/neurocare-ai" element={<NeuroCareAI />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
