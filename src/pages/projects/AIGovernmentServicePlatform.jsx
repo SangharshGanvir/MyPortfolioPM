@@ -160,52 +160,81 @@ const AIGovernmentServicePlatform = () => {
           <div className="max-w-6xl mx-auto px-6 md:px-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">01. The Challenge</h2>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Left Column - Problem Description */}
+            <div className="mb-12">
+              <h3 className="text-xl font-bold mb-6">Description</h3>
               <div className="space-y-6">
                 <p className="text-gray-300 leading-relaxed">
-                  Accessing government services is often slow, confusing, and stressful. Citizens must navigate 
-                  long forms, unclear requirements, and multiple departments, while government staff handle large 
-                  case volumes manually.
+                  Government services are often fragmented across multiple portals, requiring citizens to navigate 
+                  complex procedures and submit repetitive documentation.
                 </p>
 
                 <p className="text-gray-300 leading-relaxed">
-                  The challenge was to design a system that could support citizens through a mobile app, enable 
-                  government staff via a web dashboard, and use AI to reduce complexity and processing time.
+                  Many citizens—especially elderly users and people with low digital literacy—struggle to:
+                </p>
+
+                <div className="grid md:grid-cols-2 gap-4 ml-6">
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300">Identify the correct government service</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300">Understand required documentation</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300">Track application progress</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300">Communicate with departments</p>
+                  </div>
+                </div>
+
+                <p className="text-gray-300 leading-relaxed">
+                  Government staff also face operational inefficiencies due to manual verification, duplicated 
+                  data entry, and high inquiry volumes.
                 </p>
               </div>
+            </div>
 
-              {/* Right Column - Key Issues */}
-              <div className="bg-dark-card border border-dark-border rounded-lg p-8">
-                <h3 className="text-xl font-bold mb-6">Key Issues Identified</h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <FileText className="text-red-400" size={18} />
-                    </div>
-                    <p className="text-gray-300">Forms were too long and difficult to understand</p>
+            {/* Key Issues */}
+            <div className="bg-dark-card border border-dark-border rounded-lg p-8">
+              <h3 className="text-xl font-bold mb-6">Key Issues Identified</h3>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <AlertCircle className="text-red-400" size={18} />
                   </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <AlertCircle className="text-red-400" size={18} />
-                    </div>
-                    <p className="text-gray-300">Citizens didn't know if they were eligible before applying</p>
+                  <p className="text-gray-300">Long waiting times for service approval</p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <Users className="text-red-400" size={18} />
                   </div>
-                  
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <Users className="text-red-400" size={18} />
-                    </div>
-                    <p className="text-gray-300">Staff manually reviewed repetitive data</p>
+                  <p className="text-gray-300">Limited digital literacy among some citizens</p>
+                </div>
+                
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <FileText className="text-red-400" size={18} />
                   </div>
+                  <p className="text-gray-300">Lack of transparency in application progress</p>
+                </div>
 
-                  <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                      <AlertCircle className="text-red-400" size={18} />
-                    </div>
-                    <p className="text-gray-300">Errors caused frequent resubmissions</p>
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <Shield className="text-red-400" size={18} />
                   </div>
+                  <p className="text-gray-300">Fragmented communication between departments</p>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-8 h-8 bg-red-500/10 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                    <TrendingUp className="text-red-400" size={18} />
+                  </div>
+                  <p className="text-gray-300">High operational workload for government staff</p>
                 </div>
               </div>
             </div>
@@ -217,6 +246,8 @@ const AIGovernmentServicePlatform = () => {
           <div className="max-w-6xl mx-auto px-6 md:px-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">02. Research & Insights</h2>
 
+            <h3 className="text-xl font-bold mb-6">Research Methods</h3>
+
             {/* Research Methods - 3 Cards */}
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
@@ -224,10 +255,10 @@ const AIGovernmentServicePlatform = () => {
                   <Users className="text-primary" size={24} />
                 </div>
                 <h3 className="text-lg font-bold mb-3">User Interviews & Surveys</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Spoke with citizens and frontline staff to understand pain points in applying for benefits, 
-                  permits, and licenses.
-                </p>
+                <div className="space-y-2">
+                  <p className="text-gray-400 text-sm">25 citizens across age groups</p>
+                  <p className="text-gray-400 text-sm">10 government staff members</p>
+                </div>
               </div>
 
               <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
@@ -235,9 +266,11 @@ const AIGovernmentServicePlatform = () => {
                   <TrendingUp className="text-primary" size={24} />
                 </div>
                 <h3 className="text-lg font-bold mb-3">Data Analysis</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Reviewed drop-off points in government digital forms and common rejection reasons.
-                </p>
+                <div className="space-y-2">
+                  <p className="text-gray-400 text-sm">Application processing data</p>
+                  <p className="text-gray-400 text-sm">Citizen support requests</p>
+                  <p className="text-gray-400 text-sm">Department workflows</p>
+                </div>
               </div>
 
               <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
@@ -245,49 +278,66 @@ const AIGovernmentServicePlatform = () => {
                   <Search className="text-primary" size={24} />
                 </div>
                 <h3 className="text-lg font-bold mb-3">Competitive Audit</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Analyzed digital government platforms across regions to benchmark usability and accessibility.
-                </p>
+                <p className="text-gray-400 text-sm mb-3">Platforms studied:</p>
+                <div className="space-y-2">
+                  <p className="text-gray-300 text-sm">• Estonia e-Government</p>
+                  <p className="text-gray-300 text-sm">• UK GOV Digital Services</p>
+                  <p className="text-gray-300 text-sm">• Singapore Smart Nation</p>
+                </div>
               </div>
             </div>
 
-            {/* Persona Insight Card */}
-            <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-              <div className="p-8">
-                <h3 className="text-xl font-bold mb-6">
-                  Persona Insight: "Low Digital Literacy Citizen"
-                </h3>
-                
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                  {/* Left - Image Placeholder */}
-                  <div className="aspect-[4/3] bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <Users className="text-gray-500 mx-auto mb-3" size={48} />
-                      <p className="text-gray-500 text-sm">Persona Image</p>
-                      <p className="text-gray-600 text-xs mt-1">Add citizen photo</p>
+            {/* Persona Card */}
+            <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
+              <h3 className="text-xl font-bold mb-6">Persona</h3>
+              
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold text-primary mb-2">Low Digital Literacy Citizen</h4>
+                <div className="grid md:grid-cols-2 gap-4 text-sm">
+                  <div>
+                    <span className="text-gray-500">Age:</span>
+                    <span className="text-gray-300 ml-2">58</span>
+                  </div>
+                  <div>
+                    <span className="text-gray-500">Occupation:</span>
+                    <span className="text-gray-300 ml-2">Retired Worker</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h5 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">Pain Points</h5>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <p className="text-gray-300 text-sm">Difficult to understand forms</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <p className="text-gray-300 text-sm">Unsure which service to choose</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">•</span>
+                      <p className="text-gray-300 text-sm">Needs assistance tracking status</p>
                     </div>
                   </div>
+                </div>
 
-                  {/* Right - Quote and Details */}
-                  <div>
-                    <p className="text-gray-300 italic text-lg leading-relaxed mb-6">
-                      "I don't know if I am filling the form correctly. If something is wrong, I only find out 
-                      weeks later."
-                    </p>
-                    
-                    <div className="space-y-3 mb-6">
-                      <div>
-                        <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Goals</p>
-                        <p className="text-gray-300 text-sm">Complete forms successfully, avoid repeat visits</p>
-                      </div>
-                      <div>
-                        <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Frustrations</p>
-                        <p className="text-gray-300 text-sm">Long forms, unclear language</p>
-                      </div>
-                      <div>
-                        <p className="text-xs text-gray-500 uppercase tracking-wide mb-1">Needs</p>
-                        <p className="text-gray-300 text-sm">Guidance, validation, reassurance</p>
-                      </div>
+                <div>
+                  <h5 className="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">Goals</h5>
+                  <div className="space-y-2">
+                    <div className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <p className="text-gray-300 text-sm">Simple step-by-step service guidance</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <p className="text-gray-300 text-sm">Transparent application tracking</p>
+                    </div>
+                    <div className="flex items-start gap-2">
+                      <span className="text-primary mt-1">•</span>
+                      <p className="text-gray-300 text-sm">Quick assistance when confused</p>
                     </div>
                   </div>
                 </div>
@@ -302,68 +352,70 @@ const AIGovernmentServicePlatform = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8">03. The Strategy</h2>
 
             <p className="text-gray-300 mb-12 leading-relaxed max-w-4xl">
-              The strategy focused on using AI to assist, not replace, human decision-making. Three guiding 
-              principles shaped the solution:
+              The product strategy focuses on AI-assisted citizen journeys.
             </p>
 
-            {/* Three Pillars */}
-            <div className="bg-dark-card border border-dark-border rounded-lg p-8 mb-12">
-              <div className="grid md:grid-cols-3 gap-8">
-                {/* Pillar 1 */}
-                <div>
-                  <div className="text-5xl font-bold text-primary mb-4">1</div>
-                  <h4 className="text-lg font-bold mb-3">Guide Before Submit</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Use AI to check eligibility and completeness before submission.
-                  </p>
-                </div>
+            {/* Strategy Pillars */}
+            <div className="mb-12">
+              <h3 className="text-xl font-bold mb-6">Strategy Pillars</h3>
+              <div className="bg-dark-card border border-dark-border rounded-lg p-8">
+                <div className="grid md:grid-cols-3 gap-8">
+                  {/* Pillar 1 */}
+                  <div>
+                    <div className="text-5xl font-bold text-primary mb-4">1</div>
+                    <h4 className="text-lg font-bold mb-3">Guided Service Navigation</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                      AI assistant helps citizens choose the correct service.
+                    </p>
+                  </div>
 
-                {/* Pillar 2 */}
-                <div>
-                  <div className="text-5xl font-bold text-primary mb-4">2</div>
-                  <h4 className="text-lg font-bold mb-3">Reduce Staff Load</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Automate routine checks so staff focus on complex cases.
-                  </p>
-                </div>
+                  {/* Pillar 2 */}
+                  <div>
+                    <div className="text-5xl font-bold text-primary mb-4">2</div>
+                    <h4 className="text-lg font-bold mb-3">Real-time Status Visibility</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                      Transparent application progress.
+                    </p>
+                  </div>
 
-                {/* Pillar 3 */}
-                <div>
-                  <div className="text-5xl font-bold text-primary mb-4">3</div>
-                  <h4 className="text-lg font-bold mb-3">Design for Trust</h4>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    Make AI suggestions visible and explainable to both citizens and staff.
-                  </p>
+                  {/* Pillar 3 */}
+                  <div>
+                    <div className="text-5xl font-bold text-primary mb-4">3</div>
+                    <h4 className="text-lg font-bold mb-3">Intelligent Form Automation</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed">
+                      AI pre-fills citizen data from records.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* MVP Roadmap */}
             <div>
-              <h3 className="text-xl font-bold mb-6 uppercase tracking-wide">12-Week MVP Roadmap</h3>
+              <h3 className="text-xl font-bold mb-6">12 Week MVP Roadmap</h3>
               <div className="grid md:grid-cols-4 gap-4">
                 <div className="bg-dark-card border border-dark-border rounded-lg p-6">
                   <div className="h-1 bg-primary rounded-full mb-4"></div>
                   <h4 className="font-bold mb-2">Week 1-2</h4>
-                  <p className="text-gray-400 text-sm">Research & Definition</p>
+                  <p className="text-gray-400 text-sm">Research & information architecture</p>
                 </div>
 
                 <div className="bg-dark-card border border-dark-border rounded-lg p-6">
                   <div className="h-1 bg-primary rounded-full mb-4"></div>
                   <h4 className="font-bold mb-2">Week 3-6</h4>
-                  <p className="text-gray-400 text-sm">Flows & Wireframes</p>
+                  <p className="text-gray-400 text-sm">Wireframes & citizen flows</p>
                 </div>
 
                 <div className="bg-dark-card border border-dark-border rounded-lg p-6">
                   <div className="h-1 bg-primary rounded-full mb-4"></div>
-                  <h4 className="font-bold mb-2">Week 7-10</h4>
-                  <p className="text-gray-400 text-sm">High-Fidelity Design</p>
+                  <h4 className="font-bold mb-2">Week 7-9</h4>
+                  <p className="text-gray-400 text-sm">AI assistant integration</p>
                 </div>
 
                 <div className="bg-dark-card border border-dark-border rounded-lg p-6">
                   <div className="h-1 bg-primary rounded-full mb-4"></div>
-                  <h4 className="font-bold mb-2">Week 11-12</h4>
-                  <p className="text-gray-400 text-sm">Testing & Refinement</p>
+                  <h4 className="font-bold mb-2">Week 10-12</h4>
+                  <p className="text-gray-400 text-sm">Testing & developer handoff</p>
                 </div>
               </div>
             </div>
@@ -373,194 +425,53 @@ const AIGovernmentServicePlatform = () => {
         {/* Design Section */}
         <section id="design" className="bg-dark-card py-12 md:py-20">
           <div className="max-w-6xl mx-auto px-6 md:px-12">
-            <div className="flex items-center justify-between mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">04. Design & Artifacts</h2>
-              <a href="#" className="text-primary text-sm hover:underline">View Design System →</a>
-            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">04. Design & Artifacts</h2>
 
-            {/* Low-Fidelity Flows */}
-            <div className="mb-12">
-              <h3 className="text-xl font-bold mb-6">Low-Fidelity Flows</h3>
-              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-                <div className="aspect-[16/9] bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <Palette className="text-gray-500 mx-auto mb-3" size={48} />
-                    <p className="text-gray-500 text-sm">Flow Diagram Placeholder</p>
-                    <p className="text-gray-600 text-xs mt-1">Add form simplification and case review flow wireframes</p>
-                  </div>
+            <p className="text-gray-300 mb-12 leading-relaxed">
+              Now comes the important part for you: generating UI from Stitch.
+            </p>
+
+            <p className="text-gray-300 mb-12 leading-relaxed">
+              We will create prompts for:
+            </p>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Palette className="text-primary" size={24} />
                 </div>
+                <h3 className="font-bold mb-2">Low fidelity flows</h3>
+              </div>
+
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Users className="text-primary" size={24} />
+                </div>
+                <h3 className="font-bold mb-2">Mobile citizen app</h3>
+              </div>
+
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <LayoutDashboard className="text-primary" size={24} />
+                </div>
+                <h3 className="font-bold mb-2">Web staff dashboard</h3>
+              </div>
+
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <Palette className="text-primary" size={24} />
+                </div>
+                <h3 className="font-bold mb-2">Design system</h3>
               </div>
             </div>
 
-            {/* AI & Accessibility */}
-            <div className="mb-12">
-              <h3 className="text-xl font-bold mb-6">AI & Accessibility</h3>
-              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-                <p className="text-gray-400 leading-relaxed mb-6">
-                  Design decisions prioritized:
-                </p>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    </div>
-                    <p className="text-gray-300">Plain language</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    </div>
-                    <p className="text-gray-300">Step-by-step guidance</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    </div>
-                    <p className="text-gray-300">Inline AI validation</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    </div>
-                    <p className="text-gray-300">Clear feedback messages</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                      <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    </div>
-                    <p className="text-gray-300">Accessibility-first layout</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Key Features */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-                <h3 className="text-xl font-bold mb-4">Citizen Mobile App</h3>
-                <p className="text-gray-500 text-sm mb-4">(AI-Enabled)</p>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    AI-assisted form completion
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Eligibility pre-check
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Document upload with error detection
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Application status tracking
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Appointment booking for in-person support
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-                <h3 className="text-xl font-bold mb-4">Government Staff Web Dashboard</h3>
-                <p className="text-gray-500 text-sm mb-4">(AI-Enabled)</p>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    AI case triage (low vs high risk)
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Automatic form validation
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Missing data alerts
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Case priority queue
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Manual override and audit trail
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Final Deliverables */}
-            <h3 className="text-xl font-bold mb-8">Final Deliverables</h3>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Mobile App */}
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-                    <Users className="text-primary" size={18} />
-                  </div>
-                  <h4 className="text-lg font-bold">Mobile App</h4>
-                </div>
-                
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[9/16] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                      <div className="text-center px-2">
-                        <p className="text-gray-600 text-xs">Guided Form</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[9/16] bg-gradient-to-br from-green-100 to-blue-100 flex items-center justify-center">
-                      <div className="text-center px-2">
-                        <p className="text-gray-600 text-xs">Eligibility Check</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[9/16] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                      <div className="text-center px-2">
-                        <p className="text-gray-600 text-xs">App Status</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Web Dashboard */}
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-                    <LayoutDashboard className="text-primary" size={18} />
-                  </div>
-                  <h4 className="text-lg font-bold">Web Dashboard</h4>
-                </div>
-                
-                <div className="space-y-4">
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[16/10] bg-gradient-to-br from-green-100 to-blue-100 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <p className="text-gray-600 text-sm">Case Review Queue</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                      <div className="aspect-[4/3] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                        <p className="text-gray-600 text-xs">AI Validation</p>
-                      </div>
-                    </div>
-                    <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                      <div className="aspect-[4/3] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                        <p className="text-gray-600 text-xs">Timeline</p>
-                      </div>
-                    </div>
-                  </div>
+            {/* Placeholder for future design artifacts */}
+            <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
+              <div className="aspect-[16/9] bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg flex items-center justify-center">
+                <div className="text-center">
+                  <Palette className="text-gray-500 mx-auto mb-3" size={48} />
+                  <p className="text-gray-500 text-sm">Design Artifacts Coming Soon</p>
+                  <p className="text-gray-600 text-xs mt-1">UI screens and flows will be added here</p>
                 </div>
               </div>
             </div>
@@ -570,40 +481,27 @@ const AIGovernmentServicePlatform = () => {
         {/* Impact Section */}
         <section id="impact" className="py-12 md:py-20 border-b border-dark-border">
           <div className="max-w-6xl mx-auto px-6 md:px-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">05. Projected Impact</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">05. Impact</h2>
 
-            {/* Metrics Card */}
-            <div className="bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-8 md:p-12 mb-12">
-              <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-                <div className="text-center">
-                  <div className="text-5xl md:text-6xl font-bold text-white mb-3">+50%</div>
-                  <p className="text-gray-300 font-medium">Form Completion</p>
-                  <p className="text-gray-500 text-sm mt-1">Guided submission flow</p>
-                </div>
-
-                <div className="text-center">
-                  <div className="text-5xl md:text-6xl font-bold text-white mb-3">-40%</div>
-                  <p className="text-gray-300 font-medium">Processing Time</p>
-                  <p className="text-gray-500 text-sm mt-1">AI-assisted validation</p>
-                </div>
-
-                <div className="text-center">
-                  <div className="text-5xl md:text-6xl font-bold text-white mb-3">-35%</div>
-                  <p className="text-gray-300 font-medium">Service Counter Visits</p>
-                  <p className="text-gray-500 text-sm mt-1">Better digital success</p>
-                </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-dark-card border border-dark-border rounded-lg p-6">
+                <div className="text-4xl font-bold text-primary mb-2">50%</div>
+                <p className="text-gray-400 text-sm">Increase in form completion</p>
               </div>
-            </div>
 
-            {/* Client Testimonial */}
-            <div>
-              <h3 className="text-lg font-bold mb-6">Client Testimonial</h3>
-              <div className="bg-dark-card border border-dark-border rounded-lg p-8">
-                <p className="text-gray-300 italic text-lg leading-relaxed mb-6">
-                  "This platform fundamentally improves how citizens access services and how staff process cases. 
-                  AI support allows us to reduce errors while maintaining human oversight."
-                </p>
-                <p className="text-sm text-gray-500">— Director of Digital Services, Public Sector Agency</p>
+              <div className="bg-dark-card border border-dark-border rounded-lg p-6">
+                <div className="text-4xl font-bold text-primary mb-2">35%</div>
+                <p className="text-gray-400 text-sm">Reduction in processing time</p>
+              </div>
+
+              <div className="bg-dark-card border border-dark-border rounded-lg p-6">
+                <div className="text-4xl font-bold text-primary mb-2">60%</div>
+                <p className="text-gray-400 text-sm">Fewer support inquiries</p>
+              </div>
+
+              <div className="bg-dark-card border border-dark-border rounded-lg p-6">
+                <div className="text-4xl font-bold text-primary mb-2">4.5/5</div>
+                <p className="text-gray-400 text-sm">Citizen satisfaction score</p>
               </div>
             </div>
           </div>
@@ -612,31 +510,32 @@ const AIGovernmentServicePlatform = () => {
         {/* Reflection Section */}
         <section id="reflection" className="bg-dark-card py-12 md:py-20">
           <div className="max-w-6xl mx-auto px-6 md:px-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12">Reflection</h2>
-            
-            <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-              <div className="flex items-start gap-4 mb-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Shield className="text-primary" size={20} />
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">06. Reflection</h2>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-xl font-bold mb-4">Key Learnings</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    </div>
+                    <p className="text-gray-300">AI should guide, not replace human judgment in government services</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    </div>
+                    <p className="text-gray-300">Accessibility must be built in from the start, not added later</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    </div>
+                    <p className="text-gray-300">Designing for multiple user roles requires careful balance</p>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold pt-2">Designing AI for Public Trust</h3>
               </div>
-              
-              <p className="text-gray-300 leading-relaxed mb-6">
-                This project highlighted the responsibility of using AI in public services. Automation needed to 
-                be transparent, fair, and auditable. Rather than replacing staff decisions, AI acted as an 
-                assistant to reduce errors and workload.
-              </p>
-
-              <p className="text-gray-300 leading-relaxed mb-6">
-                The key learning was that trust is built through clarity — users must understand what the system 
-                is doing and why. Designing for accessibility and explainability proved more important than adding 
-                advanced features.
-              </p>
-
-              <p className="text-gray-300 leading-relaxed mb-8">
-                Future phases could include multilingual AI support and predictive service demand planning.
-              </p>
 
               <Link 
                 to="/work" 
