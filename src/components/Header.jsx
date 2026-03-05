@@ -18,9 +18,11 @@ const Header = () => {
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity" onClick={closeMobileMenu}>
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-primary rounded-lg flex items-center justify-center">
-              <Zap size={20} className="md:w-6 md:h-6 text-white" fill="white" />
-            </div>
+            <img 
+              src="/favicon.svg" 
+              alt="SG Logo" 
+              className="w-8 h-8 md:w-10 md:h-10"
+            />
             <span className="text-base md:text-xl font-bold">Sangharsh G Ganvir</span>
           </Link>
           
