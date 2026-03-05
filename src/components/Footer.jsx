@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Dribbble } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,24 +20,6 @@ const Footer = () => {
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
-            </a>
-            <a 
-              href="https://twitter.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-primary transition-colors"
-              aria-label="Twitter"
-            >
-              <Twitter size={20} />
-            </a>
-            <a 
-              href="https://dribbble.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-primary transition-colors"
-              aria-label="Dribbble"
-            >
-              <Dribbble size={20} />
             </a>
           </div>
         </div>

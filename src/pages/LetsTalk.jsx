@@ -19,10 +19,10 @@ const LetsTalk = () => {
             <div>
               <h3 className="text-sm text-gray-400 uppercase tracking-wide mb-3">Email</h3>
               <a 
-                href="mailto:sangharsh@example.com"
+                href="mailto:sangharshganvir88@gmail.com"
                 className="text-xl text-white hover:text-primary transition-colors inline-flex items-center gap-2 group"
               >
-                sangharsh@example.com
+                sangharshganvir88@gmail.com
                 <span className="opacity-0 group-hover:opacity-100 transition-opacity">↗</span>
               </a>
             </div>
@@ -39,22 +39,6 @@ const LetsTalk = () => {
                 >
                   LinkedIn
                 </a>
-                <a 
-                  href="https://twitter.com" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-primary transition-colors block"
-                >
-                  Twitter / X
-                </a>
-                <a 
-                  href="https://dribbble.com" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-primary transition-colors block"
-                >
-                  Dribbble
-                </a>
               </div>
             </div>
 
@@ -63,7 +47,7 @@ const LetsTalk = () => {
               <h3 className="text-sm text-gray-400 uppercase tracking-wide mb-3">Location</h3>
               <div className="flex items-center gap-2 text-white">
                 <MapPin size={20} className="text-primary" />
-                <span>San Francisco, CA (PST)</span>
+                <span>Nagpur, MH, India</span>
               </div>
             </div>
 
