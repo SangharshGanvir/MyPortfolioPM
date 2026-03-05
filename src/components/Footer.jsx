@@ -1,10 +1,10 @@
 import { Linkedin } from 'lucide-react';
 
-const Footer = () => {
+const Footer = ({ isProjectPage = false }) => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="border-t border-dark-border bg-dark-bg">
+    <footer className={`border-t border-dark-border bg-dark-bg ${isProjectPage ? 'lg:ml-64' : ''}`}>
       <div className="container-custom py-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-gray-400">
