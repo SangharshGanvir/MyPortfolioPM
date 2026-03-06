@@ -547,6 +547,33 @@ const AIGovernmentServicePlatform = () => {
             </div>
           </div>
         </section>
+
+        {/* Key Takeaways Section */}
+        <section className="py-12 md:py-20 border-b border-dark-border">
+          <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Key Takeaways</h2>
+            <div className="bg-dark-card border border-dark-border rounded-lg p-8">
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Early user testing with citizens of varying digital literacy levels showed that guided step-by-step flows outperformed traditional form layouts — even when the total number of fields was the same.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Collaborating with government operations staff revealed that AI-assisted case triage only earned trust when staff could see the reasoning and override decisions — transparency was non-negotiable.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Simplifying the eligibility check into a conversational format reduced form abandonment significantly — users responded better to plain-language questions than to bureaucratic terminology.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Designing for public services requires building trust at every interaction — clear progress indicators, honest error messages, and visible audit trails made citizens more willing to complete applications online.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

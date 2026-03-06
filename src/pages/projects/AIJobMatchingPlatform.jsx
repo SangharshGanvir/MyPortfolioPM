@@ -643,6 +643,33 @@ const AIJobMatchingPlatform = () => {
             </div>
           </div>
         </section>
+
+        {/* Key Takeaways Section */}
+        <section className="py-12 md:py-20 border-b border-dark-border">
+          <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Key Takeaways</h2>
+            <div className="bg-dark-card border border-dark-border rounded-lg p-8">
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Showing users why a job was recommended — not just that it was — significantly increased trust in AI-generated matches and reduced drop-off on results pages.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Collaborating with the data science team early helped us design match explanations that were both technically accurate and easy for non-technical users to understand.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">User testing revealed that job seekers preferred fewer, higher-quality recommendations over long lists — reducing visible matches actually improved engagement.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Designing the skill gap visualization helped users see career growth opportunities, which shifted the product from a job board into a career planning tool.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );

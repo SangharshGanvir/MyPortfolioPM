@@ -22,7 +22,7 @@ const Home = () => {
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 md:mb-8 leading-relaxed">
-              Bridging design vision and technical execution to build scalable enterprise products.
+              I help teams turn complex product challenges into simple, scalable digital experiences. My work focuses on aligning user needs, business goals, and technology to deliver products that people can actually use and teams can successfully ship.
             </p>
             
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-8 md:mb-12">
@@ -42,17 +42,20 @@ const Home = () => {
             <div className="grid grid-cols-3 gap-4 md:gap-6">
               <div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">9+</div>
-                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Years Experience</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Years</div>
+                <div className="text-[10px] sm:text-xs text-gray-500 mt-1">Designing complex digital products</div>
               </div>
               
               <div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">50+</div>
-                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Projects Delivered</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Deliveries</div>
+                <div className="text-[10px] sm:text-xs text-gray-500 mt-1">Products, platforms & design systems</div>
               </div>
               
               <div>
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-1">Enterprise</div>
-                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Client Portfolio</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">Work</div>
+                <div className="text-[10px] sm:text-xs text-gray-500 mt-1">Healthcare, FinTech & AI platforms</div>
               </div>
             </div>
           </div>
@@ -76,7 +79,7 @@ const Home = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-white text-xs md:text-sm">Product & UX Strategist</div>
-                  <div className="text-[10px] md:text-xs text-gray-400 line-clamp-2">Bridging design vision, business strategy, and scalable enterprise products.</div>
+                  <div className="text-[10px] md:text-xs text-gray-400 line-clamp-2">Aligning design vision, business strategy, and scalable enterprise products.</div>
                 </div>
               </div>
             </div>
@@ -87,8 +90,8 @@ const Home = () => {
       {/* Strategic Leadership Section */}
       <section className="bg-dark-card border-y border-dark-border py-12 md:py-20">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Strategic Leadership</h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12">Orchestrating complexity into clarity.</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Design Leadership & Product Strategy</h2>
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12">Aligning user experience, business goals, and technology to build scalable digital products.</p>
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div>
@@ -97,9 +100,7 @@ const Home = () => {
                 Methodology
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                My approach combines Agile best practices with deep user-centered design principles. 
-                I lead cross-functional teams to deliver scalable digital products that align business 
-                goals with real user needs—without compromising usability or quality.
+                My work blends product thinking with human-centered design. I collaborate closely with product managers, engineers, and stakeholders to translate complex requirements into clear product direction and usable experiences.
               </p>
             </div>
             
@@ -109,8 +110,7 @@ const Home = () => {
                 Collaboration
               </h3>
               <p className="text-gray-400 leading-relaxed">
-                Effective design leadership is rooted in communication. I build transparent workflows 
-                that bridge designers, engineers, and stakeholders, fostering trust, alignment, and rapid iteration.
+                Strong products are built through collaboration. I create transparent workflows that help designers, engineers, and stakeholders stay aligned while moving quickly from ideas to validated solutions.
               </p>
             </div>
           </div>
@@ -118,10 +118,18 @@ const Home = () => {
           <div className="mt-8 md:mt-12">
             <h3 className="text-lg md:text-xl font-bold mb-6">Core Competencies</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
-              {['UX Strategy', 'Stakeholder Management', 'Product Roadmapping', 'Design Systems', 
-                'User Research', 'Team Leadership', 'Data-Informed Design'].map((skill) => (
-                <div key={skill} className="card text-center">
-                  <span className="text-xs md:text-sm font-medium">{skill}</span>
+              {[
+                { title: 'Product & UX Strategy', desc: 'Define product direction by aligning user needs, business goals, and technical constraints.' },
+                { title: 'Stakeholder Alignment', desc: 'Facilitate alignment between product, engineering, and leadership teams.' },
+                { title: 'Product Roadmapping', desc: 'Plan and prioritize product initiatives that drive measurable outcomes.' },
+                { title: 'Design Systems Architecture', desc: 'Build scalable design systems that improve consistency and development speed.' },
+                { title: 'User Research & Insights', desc: 'Use qualitative and quantitative research to inform product decisions.' },
+                { title: 'Data-Driven Product Design', desc: 'Leverage analytics and product metrics to continuously improve experiences.' },
+                { title: 'Design Team Leadership', desc: 'Mentor designers and guide teams toward impactful solutions.' },
+              ].map((skill) => (
+                <div key={skill.title} className="card text-center">
+                  <span className="text-xs md:text-sm font-medium block mb-1">{skill.title}</span>
+                  <span className="text-[10px] md:text-xs text-gray-500 leading-tight block">{skill.desc}</span>
                 </div>
               ))}
             </div>
@@ -129,12 +137,58 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Section Divider */}
+      <div className="container-custom"><div className="border-t border-white/[0.06]"></div></div>
+
+      {/* How I Work Section */}
+      <section className="container-custom py-12 md:py-20">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">How I Work</h2>
+        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12">A practical approach to solving product problems through collaboration, experimentation, and continuous learning.</p>
+        
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="card">
+            <div className="text-3xl font-bold text-primary mb-4">01</div>
+            <h3 className="text-lg font-bold mb-3">Understand the Problem</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Before designing screens, I focus on understanding the real problem. This includes stakeholder discussions, reviewing product data, and observing how users currently complete tasks.
+            </p>
+          </div>
+
+          <div className="card">
+            <div className="text-3xl font-bold text-primary mb-4">02</div>
+            <h3 className="text-lg font-bold mb-3">Start Simple</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              I begin with simple ideas and validate them early. Quick sketches and low-fidelity prototypes help teams explore direction before investing in polished design.
+            </p>
+          </div>
+
+          <div className="card">
+            <div className="text-3xl font-bold text-primary mb-4">03</div>
+            <h3 className="text-lg font-bold mb-3">Design with Constraints</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Every product operates within real constraints. I work closely with engineering and product teams to find solutions that balance usability, business goals, and technical feasibility.
+            </p>
+          </div>
+
+          <div className="card">
+            <div className="text-3xl font-bold text-primary mb-4">04</div>
+            <h3 className="text-lg font-bold mb-3">Iterate with Feedback</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Design improves through iteration. I use feedback from users, teams, and product metrics to refine solutions and continuously improve the experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Divider */}
+      <div className="container-custom"><div className="border-t border-white/[0.06]"></div></div>
+
       {/* Featured Projects Section */}
       <section className="container-custom py-12 md:py-20">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 md:mb-12 gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">Featured Projects</h2>
-            <p className="text-base md:text-xl text-gray-400">A selection of recent leadership engagements.</p>
+            <p className="text-base md:text-xl text-gray-400">Selected product design projects focused on solving complex problems and delivering measurable outcomes.</p>
           </div>
           
           <Link 

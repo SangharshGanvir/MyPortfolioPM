@@ -201,9 +201,11 @@ const NeuroCareAI = () => {
                   Reimagining Preventive Healthcare Through AI
                 </p>
 
-                <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
-                  A dual-sided digital healthcare platform designed to streamline patient access, optimize 
-                  provider workflows, and introduce predictive health intelligence through AI-driven insights.
+                <p className="text-lg md:text-xl text-gray-300 mb-4 leading-relaxed">
+                  NeuroCare AI is a dual-sided healthcare platform designed to simplify patient access and improve diagnostic workflows for providers. The system connects patients, clinicians, and AI-driven insights into a unified experience that supports earlier detection and faster care coordination.
+                </p>
+                <p className="text-base md:text-lg text-gray-400 mb-8 leading-relaxed">
+                  This project focused on designing an end-to-end platform that reduces patient friction while helping providers manage and prioritize diagnostic cases more effectively.
                 </p>
 
                 <div className="flex flex-wrap gap-4 mb-12">
@@ -288,6 +290,9 @@ const NeuroCareAI = () => {
             <div className="mb-8">
               <p className="text-2xl font-semibold text-gray-200 mb-6">
                 Healthcare access remains fragmented, slow, and reactive.
+              </p>
+              <p className="text-gray-400 leading-relaxed">
+                Healthcare access often relies on fragmented systems, manual coordination, and delayed diagnostics. Patients struggle to schedule and track care, while clinics lack visibility into diagnostic progress and patient status.
               </p>
             </div>
 
@@ -400,21 +405,21 @@ const NeuroCareAI = () => {
               <h3 className="text-xl font-bold mb-6">Key Insights</h3>
               <div className="space-y-6">
                 <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
-                  <h4 className="text-lg font-bold mb-3">1. Booking Friction is Emotional</h4>
+                  <h4 className="text-lg font-bold mb-3">1. Booking Friction is a Major Barrier</h4>
                   <p className="text-gray-300">
-                    Patients feel anxiety when navigating unclear healthcare systems.
+                    Patients frequently delayed care because appointment scheduling required multiple steps or phone calls.
                   </p>
                 </div>
                 <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
-                  <h4 className="text-lg font-bold mb-3">2. Clinics Operate on Manual Workflows</h4>
+                  <h4 className="text-lg font-bold mb-3">2. Clinics Operate in Manual Workflows</h4>
                   <p className="text-gray-300">
-                    Appointment management and triaging rely heavily on spreadsheets and phone calls.
+                    Clinic staff relied on spreadsheets and disconnected systems to track diagnostic requests and patient progress.
                   </p>
                 </div>
                 <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
-                  <h4 className="text-lg font-bold mb-3">3. Preventive Care is Largely Reactive</h4>
+                  <h4 className="text-lg font-bold mb-3">3. Preventive Care Lacks Prioritization</h4>
                   <p className="text-gray-300">
-                    Patients only engage after symptoms appear — not before.
+                    Providers struggled to identify which patients required immediate diagnostic attention.
                   </p>
                 </div>
               </div>
@@ -441,6 +446,18 @@ const NeuroCareAI = () => {
           </div>
         </section>
 
+        {/* Key Insight Callout */}
+        <section className="py-12 md:py-16 border-b border-dark-border">
+          <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <div className="bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-lg p-8 md:p-10">
+              <p className="text-xs text-primary uppercase tracking-wider font-semibold mb-3">Key Insight</p>
+              <p className="text-xl md:text-2xl text-gray-200 font-semibold leading-relaxed">
+                Clinics didn't need more diagnostic data — they needed clearer prioritization of patient cases.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Strategy Section */}
         <section id="strategy" className="py-12 md:py-20 border-b border-dark-border">
           <div className="max-w-6xl mx-auto px-6 md:px-12">
@@ -460,7 +477,7 @@ const NeuroCareAI = () => {
                     <div className="text-5xl font-bold text-primary mb-4">1</div>
                     <h4 className="text-lg font-bold mb-3">Reduce Cognitive Load</h4>
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      Clear booking flow, guided steps, AI-assisted doctor matching.
+                      Simplify how patients schedule appointments and access diagnostic information.
                     </p>
                   </div>
 
@@ -468,7 +485,7 @@ const NeuroCareAI = () => {
                     <div className="text-5xl font-bold text-primary mb-4">2</div>
                     <h4 className="text-lg font-bold mb-3">Increase Operational Visibility</h4>
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      Real-time availability dashboards and automated scheduling logic.
+                      Provide clinics with a clear overview of patient progress and diagnostic workflows.
                     </p>
                   </div>
 
@@ -476,7 +493,7 @@ const NeuroCareAI = () => {
                     <div className="text-5xl font-bold text-primary mb-4">3</div>
                     <h4 className="text-lg font-bold mb-3">Introduce Preventive Intelligence</h4>
                     <p className="text-gray-400 text-sm leading-relaxed">
-                      AI-driven risk scoring and wearable health data integration.
+                      Use AI signals to highlight high-risk patients and enable earlier intervention.
                     </p>
                   </div>
                 </div>
@@ -533,37 +550,25 @@ const NeuroCareAI = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">1. Patient Mobile App (iOS + Android)</h3>
-                  <p className="text-gray-400 text-sm">Designed for accessibility and clarity</p>
+                  <p className="text-gray-400 text-sm">Designed to help patients easily schedule appointments, track diagnostic progress, and receive preventive health insights.</p>
                 </div>
               </div>
 
-              {/* Core Features */}
+              {/* Key Goals */}
               <div className="bg-dark-bg border border-dark-border rounded-lg p-8 mb-8">
-                <h4 className="text-lg font-bold mb-4">Core Features</h4>
-                <div className="grid md:grid-cols-2 gap-4">
+                <h4 className="text-lg font-bold mb-4">Key Goals</h4>
+                <div className="space-y-3">
                   <div className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">AI-powered symptom checker</p>
+                    <p className="text-gray-300 text-sm">Reduce appointment booking friction</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Smart doctor matching</p>
+                    <p className="text-gray-300 text-sm">Provide visibility into diagnostic progress</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Appointment booking & tracking</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Health insights dashboard</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Wearable data integration</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Push notifications for follow-ups</p>
+                    <p className="text-gray-300 text-sm">Encourage proactive care</p>
                   </div>
                 </div>
               </div>
@@ -603,33 +608,25 @@ const NeuroCareAI = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">2. Clinic Web Dashboard</h3>
-                  <p className="text-gray-400 text-sm">Designed for operational efficiency and high-density data interaction</p>
+                  <p className="text-gray-400 text-sm">Built to help clinics manage diagnostic workflows more efficiently.</p>
                 </div>
               </div>
 
-              {/* Core Features */}
+              {/* Key Capabilities */}
               <div className="bg-dark-bg border border-dark-border rounded-lg p-8 mb-8">
-                <h4 className="text-lg font-bold mb-4">Core Features</h4>
-                <div className="grid md:grid-cols-2 gap-4">
+                <h4 className="text-lg font-bold mb-4">Key Capabilities</h4>
+                <div className="space-y-3">
                   <div className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Real-time appointment calendar</p>
+                    <p className="text-gray-300 text-sm">Monitor diagnostic progress across patients</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Multi-provider management</p>
+                    <p className="text-gray-300 text-sm">Identify urgent or high-priority cases</p>
                   </div>
                   <div className="flex items-start gap-2">
                     <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Patient records overview</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">Predictive no-show risk indicator</p>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-primary mt-1">•</span>
-                    <p className="text-gray-300 text-sm">AI workload balancing insights</p>
+                    <p className="text-gray-300 text-sm">Coordinate communication between clinicians and staff</p>
                   </div>
                 </div>
               </div>
@@ -663,7 +660,10 @@ const NeuroCareAI = () => {
 
             {/* Design System */}
             <div>
-              <h3 className="text-2xl font-bold mb-6">Design System Foundation</h3>
+              <h3 className="text-2xl font-bold mb-4">Design System Foundation</h3>
+              <p className="text-gray-400 leading-relaxed mb-8">
+                The platform required a scalable design system that could support both patient and clinic interfaces. The system focused on accessibility, consistent interaction patterns, and reusable components to accelerate development.
+              </p>
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="bg-dark-bg border border-dark-border rounded-lg p-6">
                   <h4 className="font-bold mb-3">Spacing & Layout</h4>
@@ -699,7 +699,7 @@ const NeuroCareAI = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-12">05. Projected Impact</h2>
 
             <p className="text-gray-400 mb-8">
-              Based on usability validation and stakeholder projections:
+              Based on prototype testing and stakeholder validation, the redesigned workflows were projected to improve efficiency, reduce booking friction, and increase engagement across the platform.
             </p>
 
             {/* Metrics Card */}
@@ -734,70 +734,65 @@ const NeuroCareAI = () => {
           <div className="max-w-6xl mx-auto px-6 md:px-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-12">Reflection</h2>
             
-            <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-              <p className="text-gray-300 leading-relaxed mb-6">
-                Designing NeuroCare AI required balancing:
-              </p>
-
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300">Emotional sensitivity of healthcare</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300">Operational complexity of clinics</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-300">Scalability for enterprise health networks</p>
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
+                <h3 className="text-lg font-bold mb-6">What Worked Well</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary mt-1.5">•</span>
+                    <p className="text-gray-300 leading-relaxed">Early collaboration with clinicians helped simplify complex diagnostic workflows.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary mt-1.5">•</span>
+                    <p className="text-gray-300 leading-relaxed">Low-fidelity prototype testing revealed usability challenges before development.</p>
+                  </div>
                 </div>
               </div>
 
-              <p className="text-gray-300 leading-relaxed mb-6">
-                The biggest takeaway was designing not just screens, but a{' '}
-                <span className="text-white font-semibold">healthcare intelligence ecosystem</span> that bridges 
-                reactive care and preventive decision-making.
-              </p>
-
-              <p className="text-gray-300 leading-relaxed mb-8">
-                This project reinforced the importance of:
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
+                <h3 className="text-lg font-bold mb-6">Challenges</h3>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary mt-1.5">•</span>
+                    <p className="text-gray-300 leading-relaxed">Balancing AI automation with user trust required careful UX decisions.</p>
                   </div>
-                  <p className="text-gray-300">Designing for multiple user roles</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-primary mt-1.5">•</span>
+                    <p className="text-gray-300 leading-relaxed">Healthcare data complexity introduced additional design constraints.</p>
                   </div>
-                  <p className="text-gray-300">Translating complex data into clarity</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  </div>
-                  <p className="text-gray-300">Leading cross-functional collaboration</p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-primary/10 rounded flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                  </div>
-                  <p className="text-gray-300">Building scalable design systems early</p>
                 </div>
               </div>
+            </div>
 
-              <Link 
-                to="/work" 
-                className="btn-primary inline-flex items-center gap-2"
-              >
-                <ArrowLeft size={20} />
-                Back to All Projects
-              </Link>
+            <Link 
+              to="/work" 
+              className="btn-primary inline-flex items-center gap-2"
+            >
+              <ArrowLeft size={20} />
+              Back to All Projects
+            </Link>
+          </div>
+        </section>
+
+        {/* Key Takeaways Section */}
+        <section className="py-12 md:py-20 border-b border-dark-border">
+          <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Key Takeaways</h2>
+            <div className="bg-dark-card border border-dark-border rounded-lg p-8">
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Preventive healthcare platforms must prioritize clarity over feature complexity.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Early clinician involvement significantly improves product adoption.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Simplifying workflows often delivers more impact than adding automation.</p>
+                </li>
+              </ul>
             </div>
           </div>
         </section>

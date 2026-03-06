@@ -559,6 +559,33 @@ const SmartHealthcareAccessPlatform = () => {
             </div>
           </div>
         </section>
+
+        {/* Key Takeaways Section */}
+        <section className="py-12 md:py-20 border-b border-dark-border">
+          <div className="max-w-6xl mx-auto px-6 md:px-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8">Key Takeaways</h2>
+            <div className="bg-dark-card border border-dark-border rounded-lg p-8">
+              <ul className="space-y-4">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Observing how patients actually interacted with the booking flow showed that confirmation anxiety was the biggest friction point — adding real-time status updates had more impact than reducing steps.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Designing the staff dashboard alongside the patient app forced alignment between front-end simplicity and back-end operational needs — decisions on one side always affected the other.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Iterating on the reminder system with clinic staff revealed that timing and tone of notifications mattered more than frequency — reducing no-shows was about empathy, not automation.</p>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary mt-1.5">•</span>
+                  <p className="text-gray-300 leading-relaxed">Keeping accessibility standards high from day one avoided costly retrofitting and resulted in a product that worked well for all age groups, not just digitally fluent users.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
