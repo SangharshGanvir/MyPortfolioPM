@@ -75,8 +75,8 @@ const Home = () => {
                   <Award className="text-white" size={16} />
                 </div>
                 <div>
-                  <div className="font-semibold text-white text-xs md:text-sm">Certified Scrum Master</div>
-                  <div className="text-[10px] md:text-xs text-gray-400 line-clamp-2">Specialized in Agile transformations for enterprise design teams.</div>
+                  <div className="font-semibold text-white text-xs md:text-sm">Product & UX Strategist</div>
+                  <div className="text-[10px] md:text-xs text-gray-400 line-clamp-2">Bridging design vision, business strategy, and scalable enterprise products.</div>
                 </div>
               </div>
             </div>
