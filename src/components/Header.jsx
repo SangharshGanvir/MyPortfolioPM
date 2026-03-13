@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ExternalLink, Zap, Menu, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
@@ -6,15 +6,38 @@ import ThemeToggle from './ThemeToggle';
 const Header = () => {
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const isActive = (path) => {
-    return location.pathname === path ? 'text-primary' : 'text-gray-300 hover:text-white';
+    return location.pathname === path;
+  };
+  
+  const getLinkClasses = (path) => {
+    const active = isActive(path);
+    return `${
+      active 
+        ? 'text-primary border-b-2 border-primary' 
+        : 'text-gray-300 hover:text-white border-b-2 border-transparent'
+    } transition-all font-medium pb-1`;
   };
 
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-dark-bg/95 backdrop-blur-md border-b border-dark-border">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-[rgba(10,10,10,0.9)] backdrop-blur-[10px] border-b border-[rgba(255,255,255,0.06)]' 
+        : 'bg-dark-bg/95 backdrop-blur-md border-b border-dark-border'
+    }`}>
       <nav className="container-custom py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-2 md:gap-3 hover:opacity-80 transition-opacity" onClick={closeMobileMenu}>
@@ -28,16 +51,16 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
-            <Link to="/" className={`${isActive('/')} transition-colors font-medium`}>
+            <Link to="/" className={getLinkClasses('/')}>
               Home
             </Link>
-            <Link to="/about" className={`${isActive('/about')} transition-colors font-medium`}>
+            <Link to="/about" className={getLinkClasses('/about')}>
               About
             </Link>
-            <Link to="/work" className={`${isActive('/work')} transition-colors font-medium`}>
-              Work
+            <Link to="/work" className={getLinkClasses('/work')}>
+              Case Studies
             </Link>
-            <Link to="/contact" className={`${isActive('/contact')} transition-colors font-medium`}>
+            <Link to="/contact" className={getLinkClasses('/contact')}>
               Contact
             </Link>
             <a 
@@ -53,7 +76,7 @@ const Header = () => {
               to="/lets-talk" 
               className="btn-primary"
             >
-              Let's Talk
+              Start a Conversation
             </Link>
           </div>
 
@@ -73,28 +96,28 @@ const Header = () => {
             <div className="flex flex-col gap-4">
               <Link 
                 to="/" 
-                className={`${isActive('/')} transition-colors font-medium py-2`}
+                className={`${isActive('/') ? 'text-primary' : 'text-gray-300'} transition-colors font-medium py-2`}
                 onClick={closeMobileMenu}
               >
                 Home
               </Link>
               <Link 
                 to="/about" 
-                className={`${isActive('/about')} transition-colors font-medium py-2`}
+                className={`${isActive('/about') ? 'text-primary' : 'text-gray-300'} transition-colors font-medium py-2`}
                 onClick={closeMobileMenu}
               >
                 About
               </Link>
               <Link 
                 to="/work" 
-                className={`${isActive('/work')} transition-colors font-medium py-2`}
+                className={`${isActive('/work') ? 'text-primary' : 'text-gray-300'} transition-colors font-medium py-2`}
                 onClick={closeMobileMenu}
               >
-                Work
+                Case Studies
               </Link>
               <Link 
                 to="/contact" 
-                className={`${isActive('/contact')} transition-colors font-medium py-2`}
+                className={`${isActive('/contact') ? 'text-primary' : 'text-gray-300'} transition-colors font-medium py-2`}
                 onClick={closeMobileMenu}
               >
                 Contact
@@ -116,7 +139,7 @@ const Header = () => {
                 className="btn-primary text-center mt-2"
                 onClick={closeMobileMenu}
               >
-                Let's Talk
+                Start a Conversation
               </Link>
             </div>
           </div>
