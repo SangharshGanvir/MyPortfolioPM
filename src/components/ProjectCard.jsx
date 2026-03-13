@@ -5,13 +5,13 @@ const ProjectCard = ({ project }) => {
   return (
     <Link 
       to={project.link} 
-      className="group card cursor-pointer overflow-hidden transition-transform duration-[250ms] ease-out hover:-translate-y-1.5"
+      className="group card cursor-pointer overflow-hidden"
     >
-      <div className="aspect-video overflow-hidden rounded-lg mb-4">
+      <div className="image-wrapper aspect-video mb-4">
         <img 
           src={project.image} 
           alt={project.title}
-          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
         />
       </div>
       

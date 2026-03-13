@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Briefcase, Award, Users } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
+import FadeInSection from '../components/FadeInSection';
 import { featuredProjects } from '../data/projects';
 
 const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="container-custom py-12 md:py-20 lg:py-32">
-        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 xl:gap-24 items-center">
+      <section className="gradient-hero">
+        <div className="container-custom py-12 md:py-20 lg:py-32">
+          <div className="grid lg:grid-cols-[3fr_2fr] gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-center">
           {/* Left Column - Text Content */}
           <div>
             <div className="inline-flex items-center gap-2 px-3 md:px-4 py-1.5 md:py-2 bg-primary/10 border border-primary/30 rounded-full mb-6 md:mb-8">
@@ -61,7 +63,7 @@ const Home = () => {
           </div>
           
           {/* Right Column - Image */}
-          <div className="relative max-w-sm sm:max-w-md mx-auto lg:mx-0 mt-8 lg:mt-0">
+          <div className="relative max-w-xs sm:max-w-sm mx-auto lg:ml-auto lg:mr-0 mt-8 lg:mt-0">
             <div className="aspect-[3/4] rounded-xl md:rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-transparent border border-dark-border group cursor-pointer">
               <img 
                 src="/hero-image.jpeg" 
@@ -84,16 +86,20 @@ const Home = () => {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
       {/* Strategic Leadership Section */}
-      <section className="bg-dark-card border-y border-dark-border py-12 md:py-20">
+      <section className="gradient-section bg-dark-card border-y border-dark-border section-padding">
         <div className="container-custom">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">Design Leadership & Product Strategy</h2>
-          <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12">Aligning user experience, business goals, and technology to build scalable digital products.</p>
+          <FadeInSection>
+            <h2 className="heading-xl text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6">Design Leadership & Product Strategy</h2>
+            <p className="section-subtitle text-lg md:text-xl lg:text-2xl mb-8 md:mb-12">Aligning user experience, business goals, and technology to build scalable digital products.</p>
+          </FadeInSection>
           
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+          <FadeInSection delay={100}>
+            <div className="grid md:grid-cols-2 gap-8 md:gap-12">
             <div>
               <h3 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
                 <Briefcase className="text-primary" />
@@ -113,11 +119,13 @@ const Home = () => {
                 Strong products are built through collaboration. I create transparent workflows that help designers, engineers, and stakeholders stay aligned while moving quickly from ideas to validated solutions.
               </p>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
           
-          <div className="mt-8 md:mt-12">
-            <h3 className="text-lg md:text-xl font-bold mb-6">Core Competencies</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+          <FadeInSection delay={200}>
+            <div className="mt-8 md:mt-12">
+              <h3 className="text-lg md:text-xl font-bold mb-6">Core Competencies</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
               {[
                 { title: 'Product & UX Strategy', desc: 'Define product direction by aligning user needs, business goals, and technical constraints.' },
                 { title: 'Stakeholder Alignment', desc: 'Facilitate alignment between product, engineering, and leadership teams.' },
@@ -132,8 +140,9 @@ const Home = () => {
                   <span className="text-[10px] md:text-xs text-gray-500 leading-tight block">{skill.desc}</span>
                 </div>
               ))}
+              </div>
             </div>
-          </div>
+          </FadeInSection>
         </div>
       </section>
 
@@ -141,11 +150,14 @@ const Home = () => {
       <div className="container-custom"><div className="border-t border-white/[0.06]"></div></div>
 
       {/* How I Work Section */}
-      <section className="container-custom py-12 md:py-20">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6">How I Work</h2>
-        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12">A practical approach to solving product problems through collaboration, experimentation, and continuous learning.</p>
+      <section className="container-custom section-padding">
+        <FadeInSection>
+          <h2 className="heading-xl text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6">How I Work</h2>
+          <p className="section-subtitle text-lg md:text-xl lg:text-2xl mb-8 md:mb-12">A practical approach to solving product problems through collaboration, experimentation, and continuous learning.</p>
+        </FadeInSection>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <FadeInSection delay={100}>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           <div className="card">
             <div className="text-3xl font-bold text-primary mb-4">01</div>
             <h3 className="text-lg font-bold mb-3">Understand the Problem</h3>
@@ -177,19 +189,21 @@ const Home = () => {
               Design improves through iteration. I use feedback from users, teams, and product metrics to refine solutions and continuously improve the experience.
             </p>
           </div>
-        </div>
+          </div>
+        </FadeInSection>
       </section>
 
       {/* Section Divider */}
       <div className="container-custom"><div className="border-t border-white/[0.06]"></div></div>
 
       {/* Featured Projects Section */}
-      <section className="container-custom py-12 md:py-20">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 md:mb-12 gap-4">
-          <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-4">Featured Projects</h2>
-            <p className="text-base md:text-xl text-gray-400">Selected product design projects focused on solving complex problems and delivering measurable outcomes.</p>
-          </div>
+      <section className="container-custom section-padding">
+        <FadeInSection>
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 md:mb-12 gap-4">
+            <div>
+              <h2 className="heading-xl text-3xl md:text-4xl lg:text-5xl mb-2 md:mb-4">Featured Projects</h2>
+              <p className="body-text text-base md:text-xl">Selected product design projects focused on solving complex problems and delivering measurable outcomes.</p>
+            </div>
           
           <Link 
             to="/work" 
@@ -198,13 +212,16 @@ const Home = () => {
             View All Projects
             <ArrowRight size={20} />
           </Link>
-        </div>
+          </div>
+        </FadeInSection>
         
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <FadeInSection delay={100}>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {featuredProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
-        </div>
+          </div>
+        </FadeInSection>
         
         <div className="mt-12 text-center md:hidden">
           <Link 

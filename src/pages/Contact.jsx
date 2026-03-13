@@ -1,4 +1,5 @@
 import { Download, Linkedin, Twitter, Mail, MessageSquare } from 'lucide-react';
+import FadeInSection from '../components/FadeInSection';
 
 const Contact = () => {
   const skills = {
@@ -38,14 +39,17 @@ const Contact = () => {
   return (
     <div>
       {/* Process Section */}
-      <section className="bg-dark-card border-b border-dark-border py-20">
+      <section className="gradient-section bg-dark-card border-b border-dark-border section-padding">
         <div className="container-custom">
-          <h1 className="section-title">How I Lead Projects</h1>
-          <p className="section-subtitle">
+          <FadeInSection>
+            <h1 className="section-title">How I Lead Projects</h1>
+            <p className="section-subtitle">
             Ensuring clarity, agility, and user-centric outcomes from day one.
-          </p>
+            </p>
+          </FadeInSection>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <FadeInSection delay={100}>
+            <div className="grid md:grid-cols-2 gap-8">
             {processSteps.map((step, index) => (
               <div key={index} className="card">
                 <div className="text-4xl mb-4">{step.icon}</div>
@@ -53,18 +57,22 @@ const Contact = () => {
                 <p className="text-gray-400 leading-relaxed">{step.description}</p>
               </div>
             ))}
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section className="container-custom py-20">
-        <h2 className="section-title">The Toolkit</h2>
-        <p className="section-subtitle">
+      <section className="container-custom section-padding">
+        <FadeInSection>
+          <h2 className="section-title">The Toolkit</h2>
+          <p className="section-subtitle">
           A blend of technical proficiency and human-centric leadership.
-        </p>
+          </p>
+        </FadeInSection>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <FadeInSection delay={100}>
+          <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-bold mb-6">Software & Tools</h3>
             <div className="flex flex-wrap gap-3">
@@ -92,18 +100,22 @@ const Contact = () => {
               ))}
             </div>
           </div>
-        </div>
+          </div>
+        </FadeInSection>
       </section>
 
       {/* Contact Section */}
-      <section className="bg-dark-card border-t border-dark-border py-12 md:py-20">
+      <section className="bg-dark-card border-t border-dark-border section-padding-sm">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 md:mb-16">
+            <FadeInSection>
+              <h2 className="heading-xl text-3xl md:text-4xl lg:text-5xl mb-12 md:mb-16">
               Ready to optimize your product lifecycle?
-            </h2>
+              </h2>
+            </FadeInSection>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 md:mb-16">
+            <FadeInSection delay={100}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 md:mb-16">
               <a 
                 href="/resume.pdf" 
                 download
@@ -122,9 +134,11 @@ const Contact = () => {
                 <Linkedin size={20} />
                 View LinkedIn Profile
               </a>
-            </div>
+              </div>
+            </FadeInSection>
 
-            <div className="card max-w-xl mx-auto">
+            <FadeInSection delay={200}>
+              <div className="card max-w-xl mx-auto">
               <div className="flex items-start gap-4 text-left">
                 <MessageSquare className="text-primary flex-shrink-0 mt-1" size={24} />
                 <div>
@@ -137,9 +151,11 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-            </div>
+              </div>
+            </FadeInSection>
 
-            <div className="mt-12 flex justify-center gap-6">
+            <FadeInSection delay={300}>
+              <div className="mt-12 flex justify-center gap-6">
               <a 
                 href="https://linkedin.com" 
                 target="_blank"
@@ -165,7 +181,8 @@ const Contact = () => {
               >
                 <Twitter size={24} />
               </a>
-            </div>
+              </div>
+            </FadeInSection>
           </div>
         </div>
       </section>

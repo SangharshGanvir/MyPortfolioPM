@@ -1,19 +1,23 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Target, Users, Lightbulb, Handshake } from 'lucide-react';
+import FadeInSection from '../components/FadeInSection';
 
 const About = () => {
   return (
-    <div className="container-custom py-12 md:py-20">
+    <div className="container-custom section-padding">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6">About Me</h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-gray-400 mb-8 md:mb-12 leading-relaxed">
+        <FadeInSection>
+          <h1 className="section-title">About Me</h1>
+          <p className="section-subtitle text-lg md:text-xl lg:text-2xl mb-8 md:mb-12">
           I'm a Senior Product Designer and UX Lead focused on solving complex product challenges. Over the past 9+ years, I've worked across healthcare, fintech, and enterprise platforms—helping teams turn complicated systems into clear, usable digital experiences.
           <br /><br />
           I enjoy working at the intersection of product strategy, user experience, and engineering to build solutions that are practical, scalable, and meaningful for real users.
-        </p>
+          </p>
+        </FadeInSection>
 
         <div className="space-y-8 md:space-y-12">
-          <div className="card">
+          <FadeInSection delay={100}>
+            <div className="card">
             <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
               <Target className="text-primary" />
               My Mission
@@ -27,9 +31,11 @@ const About = () => {
             <p className="text-gray-400 leading-relaxed">
               I believe great products emerge when design, engineering, and product strategy work together from the start.
             </p>
-          </div>
+            </div>
+          </FadeInSection>
 
-          <div className="card">
+          <FadeInSection delay={200}>
+            <div className="card">
             <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
               <Users className="text-primary" />
               Leadership Philosophy
@@ -43,9 +49,11 @@ const About = () => {
             <p className="text-gray-400 leading-relaxed">
               Mentoring designers and supporting collaborative environments is also an important part of my work. Great design outcomes happen when every team member feels empowered to contribute.
             </p>
-          </div>
+            </div>
+          </FadeInSection>
 
-          <div className="space-y-6">
+          <FadeInSection delay={300}>
+            <div className="space-y-6">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold mb-3 flex items-center gap-3">
                 <Handshake className="text-primary" />
@@ -85,9 +93,11 @@ const About = () => {
                 </p>
               </div>
             </div>
-          </div>
+            </div>
+          </FadeInSection>
 
-          <div className="card">
+          <FadeInSection delay={400}>
+            <div className="card">
             <h2 className="text-xl md:text-2xl font-bold mb-4 flex items-center gap-3">
               <Lightbulb className="text-primary" />
               What I Bring
@@ -114,9 +124,11 @@ const About = () => {
                 <span>Data-informed decision making through research and product metrics</span>
               </li>
             </ul>
-          </div>
+            </div>
+          </FadeInSection>
 
-          <div className="text-center pt-8">
+          <FadeInSection delay={500}>
+            <div className="text-center pt-8">
             <Link 
               to="/work" 
               className="inline-flex items-center gap-2 text-primary hover:gap-4 transition-all font-medium text-lg"
@@ -124,7 +136,8 @@ const About = () => {
               Explore Case Studies
               <ArrowRight size={20} />
             </Link>
-          </div>
+            </div>
+          </FadeInSection>
         </div>
       </div>
     </div>

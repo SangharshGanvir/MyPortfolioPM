@@ -68,6 +68,10 @@
     border-color: #e5e7eb !important;
   }
 
+  html.light-theme .card:hover {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+  }
+
   /* Light theme hover states */
   html.light-theme .hover\:text-white:hover {
     color: #111827 !important;
@@ -162,7 +166,7 @@
   .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transition: opacity 0.6s ease, transform 0.6s ease;
   }
 
   .fade-in-section.is-visible {
@@ -179,15 +183,67 @@
   }
   
   .card {
-    @apply bg-dark-card border border-dark-border rounded-xl p-6 hover:border-primary/50 transition-all duration-300;
+    @apply bg-dark-card border border-dark-border rounded-xl p-6 transition-all duration-[250ms] ease-out;
+  }
+
+  .card:hover {
+    @apply border-primary/50;
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
   
   .section-title {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold mb-6;
+    letter-spacing: -0.02em;
   }
   
   .section-subtitle {
-    @apply text-xl md:text-2xl text-gray-400 mb-12;
+    @apply text-xl md:text-2xl mb-12;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+  }
+
+  /* Section Spacing Utilities */
+  .section-padding {
+    @apply py-20 md:py-[100px];
+  }
+
+  .section-padding-sm {
+    @apply py-16 md:py-20;
+  }
+
+  /* Typography Hierarchy */
+  .heading-xl {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  .body-text {
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  /* Image Presentation */
+  .image-wrapper {
+    @apply rounded-xl overflow-hidden;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Subtle Background Gradients */
+  .gradient-hero {
+    background: radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.08), transparent 40%);
+  }
+
+  .gradient-section {
+    background: radial-gradient(circle at 80% 50%, rgba(59, 130, 246, 0.05), transparent 50%);
   }
 }
 
