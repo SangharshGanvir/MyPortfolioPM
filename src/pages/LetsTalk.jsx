@@ -32,7 +32,7 @@ const LetsTalk = () => {
               <h3 className="text-sm text-gray-400 uppercase tracking-wide mb-3">Socials</h3>
               <div className="space-y-2">
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/sangharsh-ganvir-724162221" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-primary transition-colors block"

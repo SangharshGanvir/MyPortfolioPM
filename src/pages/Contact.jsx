@@ -126,7 +126,7 @@ const Contact = () => {
               </a>
               
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/sangharsh-ganvir-724162221" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary inline-flex items-center justify-center gap-2"
@@ -157,7 +157,7 @@ const Contact = () => {
             <FadeInSection delay={300}>
               <div className="mt-12 flex justify-center gap-6">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/sangharsh-ganvir-724162221" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-primary transition-colors"

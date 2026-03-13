@@ -21,7 +21,7 @@ const Footer = ({ isProjectPage = false }) => {
           
           <div className="flex items-center gap-6">
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/sangharsh-ganvir-724162221" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-primary transition-colors"
