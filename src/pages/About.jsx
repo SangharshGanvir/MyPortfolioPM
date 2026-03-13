@@ -128,6 +128,47 @@ const About = () => {
           </FadeInSection>
 
           <FadeInSection delay={500}>
+            <div className="space-y-6">
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold mb-3">What Problems I Love Solving</h2>
+                <p className="text-gray-400 leading-relaxed mb-6">
+                  Over the years, I've found that I enjoy working on product challenges that involve complexity, scale, and real-world impact.
+                </p>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="card">
+                  <h3 className="text-lg font-semibold mb-3">Complex Systems</h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Designing experiences for products with complex workflows such as enterprise platforms, healthcare systems, and analytics tools.
+                  </p>
+                </div>
+
+                <div className="card">
+                  <h3 className="text-lg font-semibold mb-3">Turning Data Into Decisions</h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Helping users understand and act on complex information through clear interfaces, dashboards, and meaningful visualizations.
+                  </p>
+                </div>
+
+                <div className="card">
+                  <h3 className="text-lg font-semibold mb-3">Reducing Product Friction</h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Simplifying multi-step processes so users can complete important tasks faster and with less confusion.
+                  </p>
+                </div>
+
+                <div className="card">
+                  <h3 className="text-lg font-semibold mb-3">Designing for Scale</h3>
+                  <p className="text-gray-400 leading-relaxed">
+                    Building design systems and frameworks that allow products and teams to grow while maintaining consistency and usability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </FadeInSection>
+
+          <FadeInSection delay={600}>
             <div className="text-center pt-8">
             <Link 
               to="/work" 

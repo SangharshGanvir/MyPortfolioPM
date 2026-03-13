@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
+import Loader from './components/Loader';
 import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
@@ -25,6 +26,7 @@ function ScrollToTop() {
 function App() {
   return (
     <Router>
+      <Loader />
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
