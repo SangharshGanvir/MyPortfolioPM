@@ -1,4 +1,4 @@
-import { Linkedin } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 
 const Footer = ({ isProjectPage = false }) => {
   const currentYear = new Date().getFullYear();
@@ -28,6 +28,15 @@ const Footer = ({ isProjectPage = false }) => {
               aria-label="LinkedIn"
             >
               <Linkedin size={20} />
+            </a>
+            <a 
+              href="https://github.com/SangharshGanvir?tab=repositories" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-primary transition-colors"
+              aria-label="GitHub"
+            >
+              <Github size={20} />
             </a>
           </div>
         </div>
