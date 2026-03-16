@@ -33,7 +33,7 @@ const Home = () => {
                 <ArrowRight size={20} />
               </Link>
               <a 
-                href="/sangharsh_ganvir.pdf" 
+                href="/Sangharsh_Ganvir_Senior_Product_Designer_Resume.pdf" 
                 download
                 className="btn-secondary text-center"
               >

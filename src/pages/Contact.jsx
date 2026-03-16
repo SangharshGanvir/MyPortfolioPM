@@ -117,7 +117,7 @@ const Contact = () => {
             <FadeInSection delay={100}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 md:mb-16">
               <a 
-                href="/sangharsh_ganvir.pdf" 
+                href="/Sangharsh_Ganvir_Senior_Product_Designer_Resume.pdf" 
                 download
                 className="btn-primary inline-flex items-center justify-center gap-2"
               >
