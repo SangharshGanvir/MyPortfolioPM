@@ -64,7 +64,7 @@ const Header = () => {
               Contact
             </Link>
             <a 
-              href="/resume.pdf" 
+              href="/src/assets/resume/sangharsh_ganvir.pdf" 
               target="_blank"
               className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors font-medium"
             >
@@ -123,7 +123,7 @@ const Header = () => {
                 Contact
               </Link>
               <a 
-                href="/resume.pdf" 
+                href="/src/assets/resume/sangharsh_ganvir.pdf" 
                 target="_blank"
                 className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors font-medium py-2"
                 onClick={closeMobileMenu}
