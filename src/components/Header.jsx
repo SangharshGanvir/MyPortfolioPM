@@ -64,8 +64,8 @@ const Header = () => {
               Contact
             </Link>
             <a 
-              href="/src/assets/resume/sangharsh_ganvir.pdf" 
-              target="_blank"
+              href="/sangharsh_ganvir.pdf" 
+              download
               className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors font-medium"
             >
               Resume
@@ -123,8 +123,8 @@ const Header = () => {
                 Contact
               </Link>
               <a 
-                href="/src/assets/resume/sangharsh_ganvir.pdf" 
-                target="_blank"
+                href="/sangharsh_ganvir.pdf" 
+                download
                 className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors font-medium py-2"
                 onClick={closeMobileMenu}
               >
