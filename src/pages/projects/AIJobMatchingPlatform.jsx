@@ -105,7 +105,7 @@ const AIJobMatchingPlatform = () => {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  AI-Powered Job Matching Platform
+                  TalentAI
                 </h1>
                 
                 <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
@@ -114,9 +114,14 @@ const AIJobMatchingPlatform = () => {
                   manage applications more effectively.
                 </p>
 
-                <button className="btn-primary mb-12">
-                  View Live Prototype
-                </button>
+                <a 
+                  href="https://www.figma.com/design/sxlPb0TR7fJQurJ9XH8KLN/Talent-AI?node-id=0-1&t=bantPz4xWHfZVjil-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-block mb-12"
+                >
+                  View Figma Design
+                </a>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div>
