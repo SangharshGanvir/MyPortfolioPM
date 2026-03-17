@@ -114,14 +114,52 @@ const AIJobMatchingPlatform = () => {
                   manage applications more effectively.
                 </p>
 
-                <a 
-                  href="https://www.figma.com/design/sxlPb0TR7fJQurJ9XH8KLN/Talent-AI?node-id=0-1&t=bantPz4xWHfZVjil-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-primary inline-block mb-12"
-                >
-                  View Figma Design
-                </a>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+                  <a 
+                    href="https://talent-ai-sg.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary inline-flex items-center justify-center gap-2"
+                  >
+                    View Live Prototype
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <a 
+                    href="https://www.figma.com/design/sxlPb0TR7fJQurJ9XH8KLN/Talent-AI?node-id=0-1&t=bantPz4xWHfZVjil-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary inline-flex items-center justify-center gap-2"
+                  >
+                    Figma Design
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <a 
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary inline-flex items-center justify-center gap-2"
+                  >
+                    Miro Mindmap
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                  <a 
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-secondary inline-flex items-center justify-center gap-2"
+                  >
+                    Notion Case Study
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </a>
+                </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                   <div>
@@ -145,15 +183,12 @@ const AIJobMatchingPlatform = () => {
 
               {/* Right Column - Hero Image */}
               <div className="relative">
-                <div className="aspect-[4/3] bg-gradient-to-br from-purple-200 via-blue-100 to-purple-100 rounded-2xl overflow-hidden flex items-center justify-center p-8">
-                  <div className="relative w-full h-full flex items-center justify-center">
-                    <div className="text-center">
-                      <Brain className="text-gray-400 mx-auto mb-4" size={64} />
-                      <p className="text-gray-600 font-medium">Hero Image Placeholder</p>
-                      <p className="text-gray-500 text-sm mt-2">Add AI matching interface mockup</p>
-                      <p className="text-gray-400 text-xs mt-1">(Mobile app or dashboard)</p>
-                    </div>
-                  </div>
+                <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+                  <img 
+                    src="/talent-ai/16-recruiter-dashboard.png" 
+                    alt="TalentAI Recruiter Dashboard"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -440,128 +475,110 @@ const AIJobMatchingPlatform = () => {
             </div>
 
             {/* Key Features */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-                <h3 className="text-xl font-bold mb-4">Job Seeker Mobile App</h3>
-                <p className="text-gray-500 text-sm mb-4">(AI-Enabled)</p>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Skill-based profile builder
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    AI job recommendations
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    "Why this match?" explanation
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Skill gap analysis
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Saved jobs and application tracking
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-                <h3 className="text-xl font-bold mb-4">Recruiter Web Dashboard</h3>
-                <p className="text-gray-500 text-sm mb-4">(AI-Enabled)</p>
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Candidate skill visualization
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    AI-assisted shortlist suggestions
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Match confidence indicators
-                  </li>
-                  <li className="flex items-start gap-2 text-gray-300 text-sm">
-                    <span className="text-primary mt-1">•</span>
-                    Application pipeline management
-                  </li>
-                </ul>
-              </div>
+            <div className="bg-dark-bg border border-dark-border rounded-lg p-8 mb-12">
+              <h3 className="text-xl font-bold mb-4">Recruiter Web Dashboard</h3>
+              <p className="text-gray-500 text-sm mb-4">(AI-Enabled)</p>
+              <ul className="grid md:grid-cols-2 gap-4">
+                <li className="flex items-start gap-2 text-gray-300 text-sm">
+                  <span className="text-primary mt-1">•</span>
+                  Candidate skill visualization
+                </li>
+                <li className="flex items-start gap-2 text-gray-300 text-sm">
+                  <span className="text-primary mt-1">•</span>
+                  AI-assisted shortlist suggestions
+                </li>
+                <li className="flex items-start gap-2 text-gray-300 text-sm">
+                  <span className="text-primary mt-1">•</span>
+                  Match confidence indicators
+                </li>
+                <li className="flex items-start gap-2 text-gray-300 text-sm">
+                  <span className="text-primary mt-1">•</span>
+                  Application pipeline management
+                </li>
+                <li className="flex items-start gap-2 text-gray-300 text-sm">
+                  <span className="text-primary mt-1">•</span>
+                  Job posting and management
+                </li>
+                <li className="flex items-start gap-2 text-gray-300 text-sm">
+                  <span className="text-primary mt-1">•</span>
+                  Interview scheduling and feedback
+                </li>
+              </ul>
             </div>
 
-            {/* Final Deliverables */}
-            <h3 className="text-xl font-bold mb-8">Final Deliverables</h3>
+            {/* Final Deliverables - Web Dashboard Screenshots */}
+            <h3 className="text-xl font-bold mb-8">Web Dashboard Screenshots</h3>
             
-            <div className="grid md:grid-cols-2 gap-8">
-              {/* Mobile App */}
+            <div className="space-y-8">
+              {/* Main Dashboard */}
               <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-                    <Users className="text-primary" size={18} />
-                  </div>
-                  <h4 className="text-lg font-bold">Mobile App</h4>
+                <h4 className="text-lg font-bold mb-4">Recruiter Dashboard</h4>
+                <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
+                  <img 
+                    src="/talent-ai/16-recruiter-dashboard.png" 
+                    alt="TalentAI Recruiter Dashboard"
+                    className="w-full h-auto"
+                  />
                 </div>
-                
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[9/16] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                      <div className="text-center px-2">
-                        <p className="text-gray-600 text-xs">Skill Profile</p>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[9/16] bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center">
-                      <div className="text-center px-2">
-                        <p className="text-gray-600 text-xs">AI Matches</p>
-                      </div>
-                    </div>
-                  </div>
+              </div>
 
+              {/* Job Management */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-sm font-bold mb-3 text-gray-400">Jobs Management</h4>
                   <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[9/16] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                      <div className="text-center px-2">
-                        <p className="text-gray-600 text-xs">Explanation</p>
-                      </div>
-                    </div>
+                    <img 
+                      src="/talent-ai/17-jobs-management-list.png" 
+                      alt="Jobs Management List"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold mb-3 text-gray-400">Job Creation</h4>
+                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
+                    <img 
+                      src="/talent-ai/18-job-creation-form.png" 
+                      alt="Job Creation Form"
+                      className="w-full h-auto"
+                    />
                   </div>
                 </div>
               </div>
 
-              {/* Web Dashboard */}
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-8 h-8 bg-primary/10 rounded flex items-center justify-center">
-                    <LayoutDashboard className="text-primary" size={18} />
-                  </div>
-                  <h4 className="text-lg font-bold">Web Dashboard</h4>
-                </div>
-                
-                <div className="space-y-4">
+              {/* Candidate Management */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="text-sm font-bold mb-3 text-gray-400">Candidates Management</h4>
                   <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <div className="aspect-[16/10] bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center p-8">
-                      <div className="text-center">
-                        <p className="text-gray-600 text-sm">Candidate Fit Overview</p>
-                      </div>
-                    </div>
+                    <img 
+                      src="/talent-ai/05-candidates-management.png" 
+                      alt="Candidates Management"
+                      className="w-full h-auto"
+                    />
                   </div>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold mb-3 text-gray-400">Hiring Pipeline</h4>
+                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
+                    <img 
+                      src="/talent-ai/07-hiring-pipeline-kanban.png" 
+                      alt="Hiring Pipeline Kanban"
+                      className="w-full h-auto"
+                    />
+                  </div>
+                </div>
+              </div>
 
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                      <div className="aspect-[4/3] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                        <p className="text-gray-600 text-xs">Shortlist</p>
-                      </div>
-                    </div>
-                    <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                      <div className="aspect-[4/3] bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center">
-                        <p className="text-gray-600 text-xs">Pipeline</p>
-                      </div>
-                    </div>
-                  </div>
+              {/* Analytics */}
+              <div>
+                <h4 className="text-lg font-bold mb-4">AI Hiring Analytics</h4>
+                <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
+                  <img 
+                    src="/talent-ai/10-ai-hiring-analytics-v2.png" 
+                    alt="AI Hiring Analytics Dashboard"
+                    className="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
