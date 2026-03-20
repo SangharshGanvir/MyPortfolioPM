@@ -353,10 +353,10 @@ const AIJobMatchingPlatform = () => {
                 
                 <div className="grid md:grid-cols-2 gap-8 items-center">
                   {/* Left - Image Placeholder */}
-                  <div className="aspect-[4/3] bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg overflow-hidden flex items-center justify-center">
+                  <div className="aspect-[4/3] bg-[#2d3748] rounded-lg overflow-hidden flex items-center justify-center">
                     <div className="text-center p-8">
-                      <Users className="text-gray-500 mx-auto mb-3" size={48} />
-                      <p className="text-gray-500 text-sm">Persona Image</p>
+                      <Users className="text-gray-600 mx-auto mb-3" size={64} />
+                      <p className="text-gray-500 text-sm font-medium">Persona Image</p>
                       <p className="text-gray-600 text-xs mt-1">Add career switcher photo</p>
                     </div>
                   </div>
