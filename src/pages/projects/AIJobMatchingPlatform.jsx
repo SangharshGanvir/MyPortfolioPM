@@ -1,9 +1,56 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, LayoutDashboard, Brain, Search, Lightbulb, Palette, TrendingUp, BookOpen, Clock, XCircle, Users, Target, AlertCircle } from 'lucide-react';
+import { ArrowLeft, LayoutDashboard, Brain, Search, Lightbulb, Palette, TrendingUp, BookOpen, Clock, XCircle, Users, Target, AlertCircle, ExternalLink } from 'lucide-react';
+import ImagePreview from '../../components/ImagePreview';
 
 const AIJobMatchingPlatform = () => {
   const [activeSection, setActiveSection] = useState('overview');
+
+  // Web Dashboard Images
+  const webImages = [
+    { src: '/talent-ai/01-dashboard-foundation.png', alt: 'Dashboard Foundation', label: 'Dashboard Foundation' },
+    { src: '/talent-ai/02-component-library.png', alt: 'Component Library', label: 'Component Library' },
+    { src: '/talent-ai/03-job-management.png', alt: 'Job Management', label: 'Job Management' },
+    { src: '/talent-ai/04-dashboard-foundation-v2.png', alt: 'Dashboard V2', label: 'Dashboard V2' },
+    { src: '/talent-ai/05-candidates-management.png', alt: 'Candidates Management', label: 'Candidates Management' },
+    { src: '/talent-ai/06-candidate-profile.png', alt: 'Candidate Profile', label: 'Candidate Profile' },
+    { src: '/talent-ai/07-hiring-pipeline-kanban.png', alt: 'Hiring Pipeline', label: 'Hiring Pipeline' },
+    { src: '/talent-ai/08-job-management-view.png', alt: 'Job Management View', label: 'Job Management View' },
+    { src: '/talent-ai/09-ai-hiring-analytics.png', alt: 'AI Analytics', label: 'AI Analytics' },
+    { src: '/talent-ai/10-ai-hiring-analytics-v2.png', alt: 'AI Analytics V2', label: 'AI Analytics V2' },
+    { src: '/talent-ai/11-settings-configuration.png', alt: 'Settings', label: 'Settings' },
+    { src: '/talent-ai/12-login-screen.png', alt: 'Login Screen', label: 'Login Screen' },
+    { src: '/talent-ai/13-signup-screen.png', alt: 'Signup Screen', label: 'Signup Screen' },
+    { src: '/talent-ai/14-forgot-password.png', alt: 'Forgot Password', label: 'Forgot Password' },
+    { src: '/talent-ai/15-reset-password.png', alt: 'Reset Password', label: 'Reset Password' },
+    { src: '/talent-ai/16-recruiter-dashboard.png', alt: 'Recruiter Dashboard', label: 'Recruiter Dashboard' },
+    { src: '/talent-ai/17-jobs-management-list.png', alt: 'Jobs List', label: 'Jobs List' },
+    { src: '/talent-ai/18-job-creation-form.png', alt: 'Job Creation', label: 'Job Creation' },
+    { src: '/talent-ai/19-job-creation-form-v2.png', alt: 'Job Creation V2', label: 'Job Creation V2' },
+    { src: '/talent-ai/20-job-detail-view.png', alt: 'Job Detail', label: 'Job Detail' },
+    { src: '/talent-ai/21-job-detail-view-v2.png', alt: 'Job Detail V2', label: 'Job Detail V2' },
+    { src: '/talent-ai/22-candidate-quick-view.png', alt: 'Candidate Quick View', label: 'Candidate Quick View' },
+    { src: '/talent-ai/23-applications-table.png', alt: 'Applications Table', label: 'Applications Table' },
+    { src: '/talent-ai/24-application-detail.png', alt: 'Application Detail', label: 'Application Detail' },
+    { src: '/talent-ai/25-interview-scheduler.png', alt: 'Interview Scheduler', label: 'Interview Scheduler' },
+    { src: '/talent-ai/26-interview-feedback.png', alt: 'Interview Feedback', label: 'Interview Feedback' },
+    { src: '/talent-ai/27-messaging-center.png', alt: 'Messaging Center', label: 'Messaging Center' },
+    { src: '/talent-ai/28-new-message-modal.png', alt: 'New Message', label: 'New Message' },
+    { src: '/talent-ai/29-notifications-dropdown.png', alt: 'Notifications', label: 'Notifications' },
+    { src: '/talent-ai/30-hiring-analytics-dashboard.png', alt: 'Hiring Analytics', label: 'Hiring Analytics' },
+    { src: '/talent-ai/31-account-settings.png', alt: 'Account Settings', label: 'Account Settings' },
+    { src: '/talent-ai/32-change-password.png', alt: 'Change Password', label: 'Change Password' },
+    { src: '/talent-ai/33-team-management.png', alt: 'Team Management', label: 'Team Management' },
+    { src: '/talent-ai/34-admin-analytics.png', alt: 'Admin Analytics', label: 'Admin Analytics' },
+    { src: '/talent-ai/35-user-management.png', alt: 'User Management', label: 'User Management' },
+    { src: '/talent-ai/36-deletion-confirmation.png', alt: 'Deletion Confirmation', label: 'Deletion Confirmation' },
+    { src: '/talent-ai/37-success-toast.png', alt: 'Success Toast', label: 'Success Toast' },
+    { src: '/talent-ai/38-error-alert.png', alt: 'Error Alert', label: 'Error Alert' },
+    { src: '/talent-ai/39-job-filter-drawer.png', alt: 'Job Filter', label: 'Job Filter' },
+    { src: '/talent-ai/40-candidate-action-drawer.png', alt: 'Candidate Actions', label: 'Candidate Actions' },
+    { src: '/talent-ai/41-empty-state.png', alt: 'Empty State', label: 'Empty State' },
+    { src: '/talent-ai/42-loading-skeleton.png', alt: 'Loading Skeleton', label: 'Loading Skeleton' },
+  ];
 
   const sections = [
     { id: 'overview', label: 'Overview', icon: LayoutDashboard },
@@ -424,20 +471,6 @@ const AIJobMatchingPlatform = () => {
               <a href="#" className="text-primary text-sm hover:underline">View Design System →</a>
             </div>
 
-            {/* Low-Fidelity Flows */}
-            <div className="mb-12">
-              <h3 className="text-xl font-bold mb-6">Low-Fidelity Flows</h3>
-              <div className="bg-dark-bg border border-dark-border rounded-lg p-8">
-                <div className="aspect-[16/9] bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <Palette className="text-gray-500 mx-auto mb-3" size={48} />
-                    <p className="text-gray-500 text-sm">Flow Diagram Placeholder</p>
-                    <p className="text-gray-600 text-xs mt-1">Add skill setup and matching flow wireframes</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* AI & Trust */}
             <div className="mb-12">
               <h3 className="text-xl font-bold mb-6">AI & Trust</h3>
@@ -474,113 +507,77 @@ const AIJobMatchingPlatform = () => {
               </div>
             </div>
 
-            {/* Key Features */}
-            <div className="bg-dark-bg border border-dark-border rounded-lg p-8 mb-12">
-              <h3 className="text-xl font-bold mb-4">Recruiter Web Dashboard</h3>
-              <p className="text-gray-500 text-sm mb-4">(AI-Enabled)</p>
-              <ul className="grid md:grid-cols-2 gap-4">
-                <li className="flex items-start gap-2 text-gray-300 text-sm">
-                  <span className="text-primary mt-1">•</span>
-                  Candidate skill visualization
-                </li>
-                <li className="flex items-start gap-2 text-gray-300 text-sm">
-                  <span className="text-primary mt-1">•</span>
-                  AI-assisted shortlist suggestions
-                </li>
-                <li className="flex items-start gap-2 text-gray-300 text-sm">
-                  <span className="text-primary mt-1">•</span>
-                  Match confidence indicators
-                </li>
-                <li className="flex items-start gap-2 text-gray-300 text-sm">
-                  <span className="text-primary mt-1">•</span>
-                  Application pipeline management
-                </li>
-                <li className="flex items-start gap-2 text-gray-300 text-sm">
-                  <span className="text-primary mt-1">•</span>
-                  Job posting and management
-                </li>
-                <li className="flex items-start gap-2 text-gray-300 text-sm">
-                  <span className="text-primary mt-1">•</span>
-                  Interview scheduling and feedback
-                </li>
-              </ul>
-            </div>
+            <h3 className="text-2xl font-bold mb-8">Product Overview</h3>
+            <p className="text-gray-300 mb-12">TalentAI consists of:</p>
 
-            {/* Final Deliverables - Web Dashboard Screenshots */}
-            <h3 className="text-xl font-bold mb-8">Web Dashboard Screenshots</h3>
-            
-            <div className="space-y-8">
-              {/* Main Dashboard */}
-              <div>
-                <h4 className="text-lg font-bold mb-4">Recruiter Dashboard</h4>
-                <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                  <img 
-                    src="/talent-ai/16-recruiter-dashboard.png" 
-                    alt="TalentAI Recruiter Dashboard"
-                    className="w-full h-auto"
-                  />
+            {/* Web Dashboard Section */}
+            <div className="mb-16">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
+                  <LayoutDashboard className="text-primary" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold">Recruiter Web Dashboard</h3>
+                  <p className="text-gray-400 text-sm">AI-enabled platform designed to help recruiters manage hiring workflows efficiently.</p>
                 </div>
               </div>
 
-              {/* Job Management */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-sm font-bold mb-3 text-gray-400">Jobs Management</h4>
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <img 
-                      src="/talent-ai/17-jobs-management-list.png" 
-                      alt="Jobs Management List"
-                      className="w-full h-auto"
-                    />
+              {/* Key Capabilities */}
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-8 mb-8">
+                <h4 className="text-lg font-bold mb-4">Key Capabilities</h4>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300 text-sm">Candidate skill visualization and matching</p>
                   </div>
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold mb-3 text-gray-400">Job Creation</h4>
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <img 
-                      src="/talent-ai/18-job-creation-form.png" 
-                      alt="Job Creation Form"
-                      className="w-full h-auto"
-                    />
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300 text-sm">AI-assisted shortlist suggestions</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300 text-sm">Application pipeline management with Kanban board</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300 text-sm">Job posting and management tools</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300 text-sm">Interview scheduling and feedback collection</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">•</span>
+                    <p className="text-gray-300 text-sm">Hiring analytics and insights dashboard</p>
                   </div>
                 </div>
               </div>
 
-              {/* Candidate Management */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="text-sm font-bold mb-3 text-gray-400">Candidates Management</h4>
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <img 
-                      src="/talent-ai/05-candidates-management.png" 
-                      alt="Candidates Management"
-                      className="w-full h-auto"
-                    />
+              {/* UX Decisions */}
+              <div className="bg-dark-bg border border-dark-border rounded-lg p-8 mb-8">
+                <h4 className="text-lg font-bold mb-4">UX Decisions</h4>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-gray-300 text-sm">Clear match explanations for AI recommendations</p>
                   </div>
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold mb-3 text-gray-400">Hiring Pipeline</h4>
-                  <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                    <img 
-                      src="/talent-ai/07-hiring-pipeline-kanban.png" 
-                      alt="Hiring Pipeline Kanban"
-                      className="w-full h-auto"
-                    />
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-gray-300 text-sm">Drag-and-drop Kanban for pipeline management</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-gray-300 text-sm">Skill-based filtering and search</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-primary mt-1">✓</span>
+                    <p className="text-gray-300 text-sm">Real-time collaboration features</p>
                   </div>
                 </div>
               </div>
 
-              {/* Analytics */}
-              <div>
-                <h4 className="text-lg font-bold mb-4">AI Hiring Analytics</h4>
-                <div className="bg-dark-bg border border-dark-border rounded-lg overflow-hidden">
-                  <img 
-                    src="/talent-ai/10-ai-hiring-analytics-v2.png" 
-                    alt="AI Hiring Analytics Dashboard"
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
+              {/* Web Dashboard Screens Preview */}
+              <ImagePreview images={webImages} title="Web Dashboard Screens" />
             </div>
           </div>
         </section>
