@@ -108,6 +108,18 @@ export const featuredProjects = [
   //   link: '/projects/neurocare-ai'
   // },
   {
+    id: 1,
+    category: 'HealthTech',
+    domain: 'HealthTech · AI Platform',
+    title: 'NeuroCare AI',
+    description: 'Patients struggled to access care quickly, and providers lacked efficient tools. We built a dual-sided platform with AI-driven health insights that reduced booking friction.',
+    role: 'End-to-End Product Design',
+    impact: 'Reduced booking friction by 38% and introduced predictive health intelligence.',
+    metric: '38% faster booking completion',
+    image: '/nurocare-ai/web/NeuroCare AI Landing Page-2.png',
+    link: '/projects/neurocare-ai'
+  },
+  {
     id: 2,
     category: 'FinTech',
     domain: 'FinTech · AI Platform',
