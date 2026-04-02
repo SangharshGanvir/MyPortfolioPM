@@ -92,20 +92,21 @@ export const projects = [
   }
 ];
 
-export const workCategories = ['All', 'FinTech', 'HealthTech', 'Strategy', 'Agile'];
+// export const workCategories = ['All', 'FinTech', 'HealthTech', 'Strategy', 'Agile'];
+export const workCategories = ['All', 'FinTech', 'HealthTech'];
 
 export const featuredProjects = [
-  {
-    id: 1,
-    category: 'HealthTech',
-    domain: 'HealthTech · AI Platform',
-    title: 'NeuroCare AI',
-    description: 'Patients struggled to access care quickly, and providers lacked tools to manage appointments efficiently. We built a dual-sided platform with AI-driven health insights that reduced booking friction and improved clinical decision-making.',
-    role: 'End-to-End Product Design',
-    impact: 'Reduced booking friction by 38% and introduced predictive health intelligence for providers.',
-    image: '/nurocare-ai/web/NeuroCare AI Landing Page-2.png',
-    link: '/projects/neurocare-ai'
-  },
+  // {
+  //   id: 1,
+  //   category: 'HealthTech',
+  //   domain: 'HealthTech · AI Platform',
+  //   title: 'NeuroCare AI',
+  //   description: 'Patients struggled to access care quickly, and providers lacked tools to manage appointments efficiently. We built a dual-sided platform with AI-driven health insights that reduced booking friction and improved clinical decision-making.',
+  //   role: 'End-to-End Product Design',
+  //   impact: 'Reduced booking friction by 38% and introduced predictive health intelligence for providers.',
+  //   image: '/nurocare-ai/web/NeuroCare AI Landing Page-2.png',
+  //   link: '/projects/neurocare-ai'
+  // },
   {
     id: 2,
     category: 'FinTech',
@@ -117,17 +118,17 @@ export const featuredProjects = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
     link: '/projects/ai-job-matching-platform'
   },
-  {
-    id: 3,
-    category: 'HealthTech',
-    domain: 'HealthTech · Enterprise SaaS',
-    title: 'Smart Healthcare Access Platform',
-    description: 'Clinics were losing patients due to long wait times and manual scheduling. We connected patients and staff through a mobile + web platform that cut call volumes by 40% and simplified appointment management.',
-    role: 'Product Design Lead',
-    impact: 'Cut clinic call volumes by 40% and simplified end-to-end appointment management.',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
-    link: '/projects/smart-healthcare-access-platform'
-  }
+  // {
+  //   id: 3,
+  //   category: 'HealthTech',
+  //   domain: 'HealthTech · Enterprise SaaS',
+  //   title: 'Smart Healthcare Access Platform',
+  //   description: 'Clinics were losing patients due to long wait times and manual scheduling. We connected patients and staff through a mobile + web platform that cut call volumes by 40% and simplified appointment management.',
+  //   role: 'Product Design Lead',
+  //   impact: 'Cut clinic call volumes by 40% and simplified end-to-end appointment management.',
+  //   image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
+  //   link: '/projects/smart-healthcare-access-platform'
+  // }
 ];
 
 export const allWorks = [
@@ -143,18 +144,18 @@ export const allWorks = [
     image: '/nurocare-ai/web/NeuroCare AI Landing Page-2.png',
     link: '/projects/neurocare-ai'
   },
-  {
-    id: 2,
-    category: 'HealthTech',
-    domain: 'HealthTech · Enterprise SaaS',
-    title: 'Smart Healthcare Access Platform',
-    description: 'Clinics were losing patients due to long wait times and manual scheduling. We connected patients and staff through a mobile + web platform.',
-    role: 'Product Design Lead',
-    impact: 'Cut clinic call volumes by 40% and simplified appointment management.',
-    metric: 'Reduced call volumes by 40%',
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
-    link: '/projects/smart-healthcare-access-platform'
-  },
+  // {
+  //   id: 2,
+  //   category: 'HealthTech',
+  //   domain: 'HealthTech · Enterprise SaaS',
+  //   title: 'Smart Healthcare Access Platform',
+  //   description: 'Clinics were losing patients due to long wait times and manual scheduling. We connected patients and staff through a mobile + web platform.',
+  //   role: 'Product Design Lead',
+  //   impact: 'Cut clinic call volumes by 40% and simplified appointment management.',
+  //   metric: 'Reduced call volumes by 40%',
+  //   image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
+  //   link: '/projects/smart-healthcare-access-platform'
+  // },
   {
     id: 3,
     category: 'FinTech',
@@ -167,28 +168,28 @@ export const allWorks = [
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
     link: '/projects/ai-job-matching-platform'
   },
-  {
-    id: 4,
-    category: 'Strategy',
-    domain: 'GovTech · AI Platform',
-    title: 'AI-Enabled Government Service Platform',
-    description: 'Citizens struggled with fragmented portals and complex forms. We designed an AI-assisted platform that guides users through government services step by step.',
-    role: 'Product Design Lead',
-    impact: 'Increased form completion by 50% and reduced support inquiries by 60%.',
-    metric: '50% increase in form completion',
-    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
-    link: '/projects/ai-government-service-platform'
-  },
-  {
-    id: 5,
-    category: 'Agile',
-    domain: 'E-Commerce · Enterprise',
-    title: 'Global Checkout Redesign',
-    description: 'Cart abandonment was high due to a rigid checkout flow that ignored regional payment preferences. We introduced local payment methods and simplified form steps.',
-    role: 'End-to-End Product Design',
-    impact: 'Increased conversion rate by 18% across 12 markets.',
-    metric: 'Increased conversion rate by 18%',
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
-    link: '/projects/smart-healthcare-access-platform'
-  }
+  // {
+  //   id: 4,
+  //   category: 'Strategy',
+  //   domain: 'GovTech · AI Platform',
+  //   title: 'AI-Enabled Government Service Platform',
+  //   description: 'Citizens struggled with fragmented portals and complex forms. We designed an AI-assisted platform that guides users through government services step by step.',
+  //   role: 'Product Design Lead',
+  //   impact: 'Increased form completion by 50% and reduced support inquiries by 60%.',
+  //   metric: '50% increase in form completion',
+  //   image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+  //   link: '/projects/ai-government-service-platform'
+  // },
+  // {
+  //   id: 5,
+  //   category: 'Agile',
+  //   domain: 'E-Commerce · Enterprise',
+  //   title: 'Global Checkout Redesign',
+  //   description: 'Cart abandonment was high due to a rigid checkout flow that ignored regional payment preferences. We introduced local payment methods and simplified form steps.',
+  //   role: 'End-to-End Product Design',
+  //   impact: 'Increased conversion rate by 18% across 12 markets.',
+  //   metric: 'Increased conversion rate by 18%',
+  //   image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+  //   link: '/projects/smart-healthcare-access-platform'
+  // }
 ];
